@@ -167,16 +167,64 @@ async function loadShared() {
 }
 
 // ---------------------------------------------------------------------
+// Chart viewer -- a dropdown + <img> pair, fed by the actual branded PNGs
+// report.py already generates (win probability, pick distribution, best
+// picks, ranked table, and -- shared only -- teams remaining pool-wide).
+// Same pair of elements is reused for the shared section and swapped per
+// member in the personal section.
+// ---------------------------------------------------------------------
+function wireChartViewer(selectEl, imgEl, basePath, charts) {
+  selectEl.innerHTML = "";
+  if (!charts || !charts.length) {
+    selectEl.disabled = true;
+    imgEl.removeAttribute("src");
+    imgEl.alt = "No charts available yet";
+    return;
+  }
+  selectEl.disabled = false;
+  charts.forEach(c => selectEl.add(new Option(c.label, c.file)));
+  const show = (file) => {
+    const c = charts.find(c => c.file === file) || charts[0];
+    imgEl.src = basePath + c.file;
+    imgEl.alt = c.label;
+  };
+  selectEl.onchange = () => show(selectEl.value);
+  show(charts[0].file);
+}
+
+const chartManifestPromise = getJSON("data/charts/manifest.json").catch(() => ({ shared: [], members: {} }));
+
+async function loadSharedCharts() {
+  const manifest = await chartManifestPromise;
+  wireChartViewer(
+    document.getElementById("shared-chart-select"),
+    document.getElementById("shared-chart-img"),
+    "data/charts/shared/",
+    manifest.shared,
+  );
+}
+
+// ---------------------------------------------------------------------
 // Personal (per-member) view
 // ---------------------------------------------------------------------
 async function loadMember(slug) {
   const article = document.getElementById("personal-md");
   article.innerHTML = "<p class=\"muted\">Loading…</p>";
-  try {
-    const md = await getText(`data/members/${slug}.md`);
-    article.innerHTML = renderMarkdown(md);
-  } catch (e) {
-    article.innerHTML = `<p class="muted">Couldn't load this member's recommendation (${e.message}).</p>`;
+  const [mdResult, manifest] = await Promise.allSettled([getText(`data/members/${slug}.md`), chartManifestPromise]);
+
+  if (manifest.status === "fulfilled") {
+    wireChartViewer(
+      document.getElementById("personal-chart-select"),
+      document.getElementById("personal-chart-img"),
+      `data/charts/${slug}/`,
+      manifest.value.members ? manifest.value.members[slug] : null,
+    );
+  }
+
+  if (mdResult.status === "fulfilled") {
+    article.innerHTML = renderMarkdown(mdResult.value);
+  } else {
+    article.innerHTML = `<p class="muted">Couldn't load this member's recommendation (${mdResult.reason.message}).</p>`;
   }
 }
 
@@ -192,6 +240,7 @@ async function loadMemberList() {
 loadShared().catch(e => {
   document.getElementById("week-line").textContent = `Couldn't load league-wide data (${e.message}).`;
 });
+loadSharedCharts().catch(() => {});
 loadMemberList().catch(e => {
   document.getElementById("personal-md").innerHTML =
     `<p class="muted">Couldn't load the member list (${e.message}).</p>`;

@@ -75,7 +75,7 @@ h3{
 .bar-row .logo{ width: 20px; height: 20px; object-fit: contain; }
 .bar-row .abbr{ font-weight: 700; font-variant-numeric: tabular-nums; }
 .bar-track{ background: var(--line); border-radius: 2px; height: 11px; overflow: hidden; }
-.bar-fill{ height: 100%; opacity: .92; }
+.bar-fill{ display: block; height: 100%; opacity: .92; } /* span is inline by default -- width is a no-op without this */
 .bar-row .pct{ text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
 
 .tablewrap{ overflow-x: auto; }
@@ -90,6 +90,18 @@ tbody tr.is-rec{ background: var(--rec-bg); outline: 1.5px solid var(--rec-borde
 td.team-cell{ display: flex; align-items: center; gap: 7px; font-weight: 700; }
 td.team-cell img{ width: 18px; height: 18px; object-fit: contain; }
 td.scale-cell{ font-weight: 700; border-radius: 3px; }
+
+.chart-viewer{
+  margin-top: 20px; background: var(--surface); border: 1px solid var(--line);
+  border-radius: 6px; padding: 16px 18px;
+}
+.chart-viewer-head{ display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+.chart-viewer-head h3{ margin: 0; }
+.chart-viewer select{
+  font: inherit; font-weight: 600; font-size: .82rem; padding: 6px 10px; border-radius: 6px;
+  border: 1px solid var(--border); background: var(--bg); color: var(--ink);
+}
+.chart-viewer img{ display: block; width: 100%; height: auto; border-radius: 4px; background: #fff; }
 
 .personal-head{ display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 14px; margin-bottom: 14px; }
 .personal-head h2{ margin: 0; flex: 1 1 auto; }
