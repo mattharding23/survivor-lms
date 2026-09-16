@@ -4,7 +4,7 @@
    brand colours as the only strong accent, and a gold highlight on the
    recommended pick -- same "gt-table" look as the ranked_table chart. */
 :root{
-  color-scheme: light dark;
+  color-scheme: light;
   --bg: #ffffff;
   --surface: #fbfbfc;
   --ink: #1a1a1a;
@@ -18,23 +18,6 @@
   --green: #3f8f29;
   --rec-bg: #fff6da;
   --rec-border: #e0b000;
-}
-@media (prefers-color-scheme: dark){
-  :root{
-    --bg: #14171a;
-    --surface: #1a1e22;
-    --ink: #f1f2f4;
-    --ink-muted: #9aa3ab;
-    --line: #262b30;
-    --border: #3a4048;
-    --stripe: #1e2226;
-    --divider: #cfd3d6;
-    --red: #ef5b56;
-    --amber: #e8b45a;
-    --green: #5fbf62;
-    --rec-bg: #35300f;
-    --rec-border: #caa53a;
-  }
 }
 
 *{ box-sizing: border-box; }
@@ -90,6 +73,13 @@ tbody tr.is-rec{ background: var(--rec-bg); outline: 1.5px solid var(--rec-borde
 td.team-cell{ display: flex; align-items: center; gap: 7px; font-weight: 700; }
 td.team-cell img{ width: 18px; height: 18px; object-fit: contain; }
 td.scale-cell{ font-weight: 700; border-radius: 3px; }
+td.plan-cell{ font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: .76rem; color: var(--ink-muted); white-space: nowrap; }
+
+.table-panel{
+  margin-top: 20px; background: var(--surface); border: 1px solid var(--line);
+  border-radius: 6px; padding: 16px 18px;
+}
+.table-panel:empty{ display: none; }
 
 .chart-viewer{
   margin-top: 20px; background: var(--surface); border: 1px solid var(--line);

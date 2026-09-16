@@ -51,6 +51,50 @@ function textOn(rgbStr) {
   return lum < 0.55 ? "#fff" : "#1a1a1a";
 }
 
+// Single-hue white->color ramps approximating the matplotlib sequential
+// colormaps (Reds/Oranges/Blues/Greens) the ranked_table chart uses for its
+// public%/dupes/future-val/score columns, sampled over the same [lo,hi]
+// ranges and the same 0.15-0.85 intensity window viz.py samples at.
+function seqColor(hueRgb, lo, hi, v) {
+  const t = Math.max(0, Math.min(1, ((v ?? lo) - lo) / ((hi - lo) || 1)));
+  const f = 0.15 + 0.7 * t;
+  const mix = (i) => Math.round(255 + (hueRgb[i] - 255) * f);
+  return `rgb(${mix(0)}, ${mix(1)}, ${mix(2)})`;
+}
+const REDS = [165, 15, 21], ORANGES = [166, 54, 3], BLUES = [8, 81, 156], GREENS = [0, 109, 44];
+
+// Native recreation of viz.py's ranked_table() gt-style chart -- same
+// columns, same color scales, same gold highlight on the top pick -- for the
+// member's own ranked-teams data (result["ranked"] via <slug>.json).
+function renderMemberTable(teams) {
+  const rows = [...teams].sort((a, b) => a.rank - b.rank);
+  const cell = (color, text) => `<td class="scale-cell" style="background:${color};color:${textOn(color)}">${text}</td>`;
+  const body = rows.map(t => {
+    const plan = Object.entries(t.implied_path || {})
+      .sort((a, b) => Number(a[0]) - Number(b[0])).slice(0, 4)
+      .map(([wk, team]) => `W${wk}:${team}`).join("  ");
+    return `<tr class="${t.rank === 1 ? "is-rec" : ""}">
+      <td>${t.rank}</td>
+      <td class="team-cell">${logoImg(t.team)}<span>${t.team}</span></td>
+      ${cell(winProbColor(t.win_prob), (t.win_prob * 100).toFixed(1) + "%")}
+      ${cell(seqColor(REDS, 0, 0.35, t.pub_pick_pct), (t.pub_pick_pct * 100).toFixed(1) + "%")}
+      ${cell(seqColor(ORANGES, 0, 3.0, t.exp_pool_opponents), t.exp_pool_opponents.toFixed(2))}
+      ${cell(seqColor(BLUES, 0, 0.60, t.future_value), t.future_value.toFixed(2))}
+      <td>${t.ev_path.toFixed(3)}</td>
+      ${cell(seqColor(GREENS, 0, 100, t.pick_score), t.pick_score.toFixed(0))}
+      <td class="plan-cell">${plan}</td>
+    </tr>`;
+  }).join("");
+  return `<h3>Ranked Available Teams</h3>
+    <div class="tablewrap"><table>
+      <thead><tr>
+        <th>#</th><th>Team</th><th>Win %</th><th>Public %</th><th>Exp. dupes</th>
+        <th>Future val</th><th>EV (path)</th><th>Score</th><th>Plan (next 4 weeks)</th>
+      </tr></thead>
+      <tbody>${body}</tbody>
+    </table></div>`;
+}
+
 // ---------------------------------------------------------------------
 // Tiny markdown renderer. The only input this ever sees is our own
 // report.py's output -- a fixed, predictable dialect (# / ## headers,
@@ -209,8 +253,15 @@ async function loadSharedCharts() {
 // ---------------------------------------------------------------------
 async function loadMember(slug) {
   const article = document.getElementById("personal-md");
+  const tableWrap = document.getElementById("personal-table-wrap");
   article.innerHTML = "<p class=\"muted\">Loading…</p>";
-  const [mdResult, manifest] = await Promise.allSettled([getText(`data/members/${slug}.md`), chartManifestPromise]);
+  tableWrap.innerHTML = "";
+
+  const [mdResult, jsonResult, manifest] = await Promise.allSettled([
+    getText(`data/members/${slug}.md`),
+    getJSON(`data/members/${slug}.json`),
+    chartManifestPromise,
+  ]);
 
   if (manifest.status === "fulfilled") {
     wireChartViewer(
@@ -222,9 +273,38 @@ async function loadMember(slug) {
   }
 
   if (mdResult.status === "fulfilled") {
-    article.innerHTML = renderMarkdown(mdResult.value);
+    // The markdown's own plain pipe-table and "## Charts" filename list are
+    // superseded here by the branded native table below and the chart
+    // viewer above -- drop both from the rendered prose so they're not
+    // shown three times over.
+    const tmp = document.createElement("div");
+    tmp.innerHTML = renderMarkdown(mdResult.value);
+    // Drop a trailing heading + everything after it, through (and including)
+    // the next table if there is one -- used for both "## Ranked available
+    // teams" (its plain table is superseded by the native one below) and
+    // "## Charts" (its filename list is superseded by the chart viewer).
+    const dropSectionAfter = (re) => {
+      const h = Array.from(tmp.querySelectorAll("h1,h2,h3")).find(el => re.test(el.textContent.trim()));
+      if (!h) return;
+      let sib = h.nextElementSibling;
+      h.remove();
+      while (sib) {
+        const next = sib.nextElementSibling;
+        const isTable = sib.tagName === "TABLE" || !!sib.querySelector?.("table");
+        sib.remove();
+        sib = next;
+        if (isTable) break;
+      }
+    };
+    dropSectionAfter(/ranked available teams/i);
+    dropSectionAfter(/^charts$/i);
+    article.innerHTML = tmp.innerHTML;
   } else {
     article.innerHTML = `<p class="muted">Couldn't load this member's recommendation (${mdResult.reason.message}).</p>`;
+  }
+
+  if (jsonResult.status === "fulfilled" && jsonResult.value.teams && jsonResult.value.teams.length) {
+    tableWrap.innerHTML = renderMemberTable(jsonResult.value.teams);
   }
 }
 
