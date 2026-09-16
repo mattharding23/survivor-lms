@@ -1,0 +1,5 @@
+participant,week,team
+# one row per opponent pick you know about, e.g.:
+# Dave,1,PHI
+# Sarah,1,KC
+# mark an opponent eliminated with:  Dave,0,OUT

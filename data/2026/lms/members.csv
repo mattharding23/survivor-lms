@@ -1,0 +1,11 @@
+member,entry_name
+Mattymo,Mattymo
+Jordan,Chmie
+Catherine,Googles
+Gunner,Gunner
+Big Dave,Parlay
+David,Tootsie Roll
+Wil,WilboBaggins
+# member = short name you refer to them by; entry_name = EXACT name/handle
+# as it appears in the pool operator's export (case-sensitive).
+# Add one row per person in your group you want a recommendation for.
