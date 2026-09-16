@@ -52,7 +52,7 @@ def load_members(cfg: Config) -> dict[str, str]:
     if not f.exists():
         f.write_text(
             "member,entry_name\n"
-            "Mattymo,Mattymo\n"
+            "Matt,Mattymo\n"
             "# member = short name you refer to them by; entry_name = EXACT name/handle\n"
             "# as it appears in the pool operator's export (case-sensitive).\n"
             "# Add one row per person in your group you want a recommendation for.\n"

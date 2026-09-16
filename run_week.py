@@ -2,7 +2,7 @@
 """Run the LMS survivor optimiser for one week.
 
     python run_week.py --week 1                     # analyse Week 1 (legacy single-user)
-    python run_week.py --week 1 --member Mattymo     # personalised for one group member
+    python run_week.py --week 1 --member Matt        # personalised for one group member
     python run_week.py --week 5 --refresh            # force re-download schedule/odds
     python run_week.py --week 1 --member all         # every configured member (used by the weekly Action)
 

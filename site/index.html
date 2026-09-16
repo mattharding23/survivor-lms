@@ -15,17 +15,18 @@
   <main>
     <section id="shared" aria-label="League-wide data">
       <h2>League-wide</h2>
+      <span class="section-sub">Last Man Standing · sorted by expected weeks survived</span>
       <div class="grid-2">
         <div class="panel">
-          <h3>Public pick % <span class="muted" id="pct-source"></span></h3>
+          <h3>Public Pick Distribution <span class="muted" id="pct-source"></span></h3>
           <div id="pct-bars" class="bars"></div>
         </div>
         <div class="panel">
-          <h3>Ranked by expected weeks survived</h3>
+          <h3>Ranked Available Teams</h3>
           <div class="tablewrap">
             <table id="league-table">
               <thead>
-                <tr><th>#</th><th>Team</th><th>Win %</th><th>Public %</th><th>Pick score</th></tr>
+                <tr><th>#</th><th>Team</th><th>Win %</th><th>Public %</th><th>Score</th></tr>
               </thead>
               <tbody></tbody>
             </table>
@@ -48,6 +49,7 @@
 
   <footer class="page-footer">
     <p class="muted">Generated automatically every Wednesday. Static data only — nothing here is fetched live.</p>
+    <p class="caption">Matt Harding &nbsp;·&nbsp; nflverse &nbsp;·&nbsp; The Odds API &nbsp;·&nbsp; SurvivorGrid</p>
   </footer>
 
   <script src="app.js"></script>
