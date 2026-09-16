@@ -153,7 +153,8 @@ def export_pool_remaining(cfg: Config, week: int, entries: pd.DataFrame) -> dict
     dest_dir.mkdir(parents=True, exist_ok=True)
     out_path = dest_dir / f"week_{week:02d}_teams_remaining.png"
     viz_mod.people_remaining(df, cfg, out_path, pool_label="Whole LMS pool")
-    return dict(key="teams_remaining", label=CHART_LABELS["teams_remaining"], file=out_path.name)
+    return dict(key="teams_remaining", label=CHART_LABELS["teams_remaining"], file=out_path.name,
+               total_entries=total)
 
 
 def export_shared(cfg: Config, week: int, result: dict) -> None:
