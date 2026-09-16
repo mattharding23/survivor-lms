@@ -1,4 +1,4 @@
-# Survivor — Week 2 (2026) — Jordan (Chmie)
+# Survivor — Week 2 (2026) — Matt (Mattymo)
 
 - Win-prob sources: **odds-api:32**
 - Public pick %: **survivorgrid** survivorgrid ok (https://www.survivorgrid.com/)

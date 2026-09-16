@@ -16,6 +16,42 @@ async function getText(path) {
 }
 
 // ---------------------------------------------------------------------
+// Branding -- same palette/sources as the pipeline's chart PNGs
+// (survivor_core/branding.py's fallback colors + ESPN logo CDN), so the
+// site reads as one system with the exported images.
+// ---------------------------------------------------------------------
+const TEAM_COLORS = {
+  ARI: "#97233F", ATL: "#A71930", BAL: "#241773", BUF: "#00338D",
+  CAR: "#0085CA", CHI: "#0B162A", CIN: "#FB4F14", CLE: "#311D00",
+  DAL: "#003594", DEN: "#FB4F14", DET: "#0076B6", GB: "#203731",
+  HOU: "#03202F", IND: "#002C5F", JAX: "#006778", KC: "#E31837",
+  LA: "#003594", LAC: "#0080C6", LV: "#000000", MIA: "#008E97",
+  MIN: "#4F2683", NE: "#002244", NO: "#D3BC8D", NYG: "#0B2265",
+  NYJ: "#125740", PHI: "#004C54", PIT: "#FFB612", SEA: "#002244",
+  SF: "#AA0000", TB: "#D50A0A", TEN: "#0C2340", WAS: "#5A1414",
+};
+const teamColor = (abbr) => TEAM_COLORS[abbr] || "#444444";
+const teamLogo = (abbr) => `https://a.espncdn.com/i/teamlogos/nfl/500/${abbr.toLowerCase()}.png`;
+const logoImg = (abbr) => `<img class="logo" src="${teamLogo(abbr)}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">`;
+
+// Same 3-stop red -> amber -> green scale as the ranked_table chart's win%
+// column (viz.py's _RGGRAD), clamped over the same [0.30, 0.88] win-prob
+// range so a given win% reads as the same color on the site as in the PNG.
+function winProbColor(p) {
+  const t = Math.max(0, Math.min(1, (p - 0.30) / (0.88 - 0.30)));
+  const stops = [[0.75, 0.06, 0.16], [0.85, 0.64, 0.25], [0.25, 0.56, 0.16]]; // red, amber, green
+  const seg = t < 0.5 ? [stops[0], stops[1], t * 2] : [stops[1], stops[2], (t - 0.5) * 2];
+  const [a, b, f] = seg;
+  const mix = (i) => Math.round((a[i] + (b[i] - a[i]) * f) * 255);
+  return `rgb(${mix(0)}, ${mix(1)}, ${mix(2)})`;
+}
+function textOn(rgbStr) {
+  const [r, g, b] = rgbStr.match(/\d+/g).map(Number);
+  const lum = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+  return lum < 0.55 ? "#fff" : "#1a1a1a";
+}
+
+// ---------------------------------------------------------------------
 // Tiny markdown renderer. The only input this ever sees is our own
 // report.py's output -- a fixed, predictable dialect (# / ## headers,
 // **bold**, `code`, "- " bullets, "> " blockquotes, and pandas
@@ -97,22 +133,26 @@ function renderPctBars(pct, source) {
   const max = entries.length ? entries[0][1] : 1;
   el.innerHTML = entries.map(([team, v]) => `
     <div class="bar-row">
+      ${logoImg(team)}
       <span class="abbr">${team}</span>
-      <span class="bar-track"><span class="bar-fill" style="width:${(v / max) * 100}%"></span></span>
+      <span class="bar-track"><span class="bar-fill" style="width:${(v / max) * 100}%;background:${teamColor(team)}"></span></span>
       <span class="pct">${(v * 100).toFixed(1)}%</span>
     </div>`).join("");
 }
 
 function renderLeagueTable(teams) {
   const tbody = document.querySelector("#league-table tbody");
-  tbody.innerHTML = teams.slice(0, 15).map(t => `
-    <tr>
+  tbody.innerHTML = teams.slice(0, 15).map(t => {
+    const wc = winProbColor(t.win_prob);
+    return `
+    <tr class="${t.rank === 1 ? "is-rec" : ""}">
       <td>${t.rank}</td>
-      <td>${t.team}</td>
-      <td>${(t.win_prob * 100).toFixed(1)}%</td>
+      <td class="team-cell">${logoImg(t.team)}<span>${t.team}</span></td>
+      <td class="scale-cell" style="background:${wc};color:${textOn(wc)}">${(t.win_prob * 100).toFixed(1)}%</td>
       <td>${(t.pub_pick_pct * 100).toFixed(1)}%</td>
       <td>${t.pick_score.toFixed(0)}</td>
-    </tr>`).join("");
+    </tr>`;
+  }).join("");
 }
 
 async function loadShared() {

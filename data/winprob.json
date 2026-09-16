@@ -1,10 +1,10 @@
 {
   "week": 2,
-  "generated_at": "2026-09-16T15:36:24.581842+00:00",
+  "generated_at": "2026-09-16T16:05:21.881013+00:00",
   "teams": {
     "ARI": {
       "1": 1.0,
-      "2": 0.35600000000000004,
+      "2": 0.3590992087644553,
       "3": 0.20863836017569545,
       "4": 0.29795092300728476,
       "5": 0.2598073675968221,
@@ -24,7 +24,7 @@
     },
     "ATL": {
       "1": 0.0,
-      "2": 0.436,
+      "2": 0.42888402625820565,
       "3": 0.27424749163879597,
       "4": 0.4248920370873779,
       "5": 0.3665860103968184,
@@ -44,7 +44,7 @@
     },
     "BAL": {
       "1": 1.0,
-      "2": 0.773,
+      "2": 0.773172033446006,
       "3": 0.5829926410466066,
       "4": 0.7401926324031779,
       "5": 0.6334139896031816,
@@ -64,8 +64,8 @@
     },
     "BUF": {
       "1": 1.0,
-      "2": 0.67,
-      "3": 0.6574752261956054,
+      "2": 0.6705271565495208,
+      "3": 0.6636481241914618,
       "4": 0.6045536281467546,
       "5": 0.3954463718532454,
       "6": 0.7020490769927152,
@@ -84,7 +84,7 @@
     },
     "CAR": {
       "1": 0.0,
-      "2": 0.5640000000000001,
+      "2": 0.5711159737417943,
       "3": 0.551441114716549,
       "4": 0.4101058393642264,
       "5": null,
@@ -104,7 +104,7 @@
     },
     "CHI": {
       "1": 1.0,
-      "2": 0.6809999999999999,
+      "2": 0.681481343907286,
       "3": 0.5173641257162701,
       "4": 0.7523230370047824,
       "5": 0.3954463718532454,
@@ -124,7 +124,7 @@
     },
     "CIN": {
       "1": 1.0,
-      "2": 0.42399999999999993,
+      "2": 0.4236130090188576,
       "3": 0.551441114716549,
       "4": 0.5751079629126221,
       "5": 0.6752818581366227,
@@ -144,7 +144,7 @@
     },
     "CLE": {
       "1": 0.0,
-      "2": 0.22699999999999998,
+      "2": 0.22892112420670893,
       "3": 0.448558885283451,
       "4": 0.4101058393642264,
       "5": 0.43978467981733405,
@@ -164,7 +164,7 @@
     },
     "DAL": {
       "1": 0.0,
-      "2": 0.652,
+      "2": 0.6547884187082406,
       "3": 0.4170073589533933,
       "4": 0.4248920370873779,
       "5": 0.6045536281467546,
@@ -184,7 +184,7 @@
     },
     "DEN": {
       "1": 0.0,
-      "2": 0.574,
+      "2": 0.584898849858078,
       "3": 0.448558885283451,
       "4": 0.4248920370873779,
       "5": 0.4248920370873779,
@@ -204,7 +204,7 @@
     },
     "DET": {
       "1": 1.0,
-      "2": 0.32999999999999996,
+      "2": 0.32947284345047917,
       "3": 0.740871613663133,
       "4": 0.5898941606357736,
       "5": 0.7401926324031779,
@@ -224,7 +224,7 @@
     },
     "GB": {
       "1": 0.0,
-      "2": 0.626,
+      "2": 0.6168582375478927,
       "3": 0.725752508361204,
       "4": 0.5452369699815208,
       "5": 0.6045536281467546,
@@ -244,7 +244,7 @@
     },
     "HOU": {
       "1": 0.0,
-      "2": 0.5760000000000001,
+      "2": 0.5763869909811424,
       "3": 0.551441114716549,
       "4": 0.5751079629126221,
       "5": 0.6045536281467546,
@@ -264,7 +264,7 @@
     },
     "IND": {
       "1": 0.0,
-      "2": 0.28200000000000003,
+      "2": 0.28523367220068746,
       "3": 0.448558885283451,
       "4": 0.4547630300184792,
       "5": 0.4248920370873779,
@@ -284,7 +284,7 @@
     },
     "JAX": {
       "1": 1.0,
-      "2": 0.42600000000000005,
+      "2": 0.415101150141922,
       "3": 0.551441114716549,
       "4": 0.4248920370873779,
       "5": 0.4547630300184792,
@@ -304,7 +304,7 @@
     },
     "KC": {
       "1": 1.0,
-      "2": 0.718,
+      "2": 0.7147663277993125,
       "3": 0.7867435158501441,
       "4": 0.6615388804893103,
       "5": null,
@@ -324,7 +324,7 @@
     },
     "LA": {
       "1": 0.0,
-      "2": 0.743,
+      "2": 0.7402209614810391,
       "3": 0.551441114716549,
       "4": 0.5751079629126221,
       "5": 0.6045536281467546,
@@ -344,8 +344,8 @@
     },
     "LAC": {
       "1": 0.0,
-      "2": 0.7170000000000001,
-      "3": 0.34252477380439467,
+      "2": 0.7147663277993125,
+      "3": 0.33635187580853815,
       "4": 0.4101058393642264,
       "5": 0.5751079629126221,
       "6": 0.4248920370873779,
@@ -364,7 +364,7 @@
     },
     "LV": {
       "1": 1.0,
-      "2": 0.2829999999999999,
+      "2": 0.28523367220068746,
       "3": 0.4066302458405761,
       "4": 0.3384611195106897,
       "5": 0.2598073675968221,
@@ -384,7 +384,7 @@
     },
     "MIA": {
       "1": 0.0,
-      "2": 0.128,
+      "2": 0.12629161882893225,
       "3": 0.2132564841498559,
       "4": 0.28495575798266715,
       "5": 0.32471814186337733,
@@ -404,7 +404,7 @@
     },
     "MIN": {
       "1": 1.0,
-      "2": 0.31900000000000006,
+      "2": 0.318518656092714,
       "3": 0.4675324675324675,
       "4": 0.7150442420173329,
       "5": 0.5452369699815208,
@@ -424,7 +424,7 @@
     },
     "NE": {
       "1": 0.0,
-      "2": 0.679,
+      "2": 0.6792452830188679,
       "3": 0.448558885283451,
       "4": 0.3954463718532454,
       "5": 0.7401926324031779,
@@ -444,7 +444,7 @@
     },
     "NO": {
       "1": 0.0,
-      "2": 0.22699999999999998,
+      "2": 0.22682796655399393,
       "3": 0.593369754159424,
       "4": 0.5751079629126221,
       "5": 0.4547630300184792,
@@ -464,7 +464,7 @@
     },
     "NYG": {
       "1": 1.0,
-      "2": 0.257,
+      "2": 0.2597790385189609,
       "3": 0.6805555555555556,
       "4": 0.7020490769927152,
       "5": 0.4248920370873779,
@@ -484,7 +484,7 @@
     },
     "NYJ": {
       "1": 1.0,
-      "2": 0.374,
+      "2": 0.38314176245210724,
       "3": 0.2591283863368669,
       "4": 0.24767696299521758,
       "5": 0.560215320182666,
@@ -504,7 +504,7 @@
     },
     "PHI": {
       "1": 1.0,
-      "2": 0.741,
+      "2": 0.7429305912596401,
       "3": 0.4826358742837298,
       "4": 0.4248920370873779,
       "5": 0.5452369699815208,
@@ -524,7 +524,7 @@
     },
     "PIT": {
       "1": 1.0,
-      "2": 0.32099999999999995,
+      "2": 0.32075471698113206,
       "3": 0.448558885283451,
       "4": 0.5898941606357736,
       "5": 0.5751079629126221,
@@ -544,7 +544,7 @@
     },
     "SEA": {
       "1": 1.0,
-      "2": 0.6439999999999999,
+      "2": 0.6409007912355448,
       "3": 0.551441114716549,
       "4": 0.5898941606357736,
       "5": 0.6045536281467546,
@@ -564,7 +564,7 @@
     },
     "SF": {
       "1": 1.0,
-      "2": 0.872,
+      "2": 0.8737083811710676,
       "3": 0.7913616398243045,
       "4": 0.5751079629126221,
       "5": 0.3954463718532454,
@@ -584,7 +584,7 @@
     },
     "TB": {
       "1": 0.0,
-      "2": 0.773,
+      "2": 0.771078875793291,
       "3": 0.5324675324675325,
       "4": 0.4547630300184792,
       "5": 0.3954463718532454,
@@ -604,7 +604,7 @@
     },
     "TEN": {
       "1": 0.0,
-      "2": 0.259,
+      "2": 0.25706940874035994,
       "3": 0.3194444444444444,
       "4": 0.2598073675968221,
       "5": 0.3954463718532454,
@@ -624,7 +624,7 @@
     },
     "WAS": {
       "1": 0.0,
-      "2": 0.348,
+      "2": 0.3452115812917595,
       "3": 0.448558885283451,
       "4": 0.5452369699815208,
       "5": 0.5751079629126221,
@@ -646,8 +646,8 @@
   "sources": {
     "ARI": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -666,8 +666,8 @@
     },
     "ATL": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -686,8 +686,8 @@
     },
     "BAL": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -706,8 +706,8 @@
     },
     "BUF": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -726,8 +726,8 @@
     },
     "CAR": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": null,
       "6": "survivorgrid-spread",
@@ -746,8 +746,8 @@
     },
     "CHI": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -766,8 +766,8 @@
     },
     "CIN": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": null,
@@ -786,8 +786,8 @@
     },
     "CLE": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -806,8 +806,8 @@
     },
     "DAL": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -826,8 +826,8 @@
     },
     "DEN": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -846,8 +846,8 @@
     },
     "DET": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": null,
@@ -866,8 +866,8 @@
     },
     "GB": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -886,8 +886,8 @@
     },
     "HOU": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -906,8 +906,8 @@
     },
     "IND": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -926,8 +926,8 @@
     },
     "JAX": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -946,8 +946,8 @@
     },
     "KC": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": null,
       "6": "survivorgrid-spread",
@@ -966,8 +966,8 @@
     },
     "LA": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -986,8 +986,8 @@
     },
     "LAC": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -1006,8 +1006,8 @@
     },
     "LV": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -1026,8 +1026,8 @@
     },
     "MIA": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": null,
@@ -1046,8 +1046,8 @@
     },
     "MIN": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": null,
@@ -1066,8 +1066,8 @@
     },
     "NE": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -1086,8 +1086,8 @@
     },
     "NO": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -1106,8 +1106,8 @@
     },
     "NYG": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -1126,8 +1126,8 @@
     },
     "NYJ": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -1146,8 +1146,8 @@
     },
     "PHI": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -1166,8 +1166,8 @@
     },
     "PIT": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -1186,8 +1186,8 @@
     },
     "SEA": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -1206,8 +1206,8 @@
     },
     "SF": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -1226,8 +1226,8 @@
     },
     "TB": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -1246,8 +1246,8 @@
     },
     "TEN": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
@@ -1266,8 +1266,8 @@
     },
     "WAS": {
       "1": "result",
-      "2": "survivorgrid-w%",
-      "3": "nflverse-ml",
+      "2": "odds-api",
+      "3": "odds-api",
       "4": "survivorgrid-spread",
       "5": "survivorgrid-spread",
       "6": "survivorgrid-spread",
