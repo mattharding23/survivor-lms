@@ -1,7 +1,7 @@
 {
   "member": "Jordan",
   "week": 2,
-  "generated_at": "2026-09-16T16:46:35.486048+00:00",
+  "generated_at": "2026-09-16T16:58:10.270209+00:00",
   "teams": [
     {
       "team": "TB",
@@ -191,17 +191,17 @@
     {
       "team": "CHI",
       "team_name": "Chicago Bears",
-      "win_prob": 0.681481343907286,
+      "win_prob": 0.6742037442256261,
       "pub_pick_pct": 0.015,
       "exp_pool_share": 0.0,
       "exp_pool_opponents": 0.0,
       "future_value": 0.15461757325294415,
       "fv_penalty": 0.054116150638530446,
       "consensus_penalty": 0.0,
-      "contrarian_bonus": 0.005745406055856332,
+      "contrarian_bonus": 0.0056520130893472674,
       "rest_of_season_logwp": -4.511588219100432,
-      "ev_myopic": -0.4318571478472618,
-      "ev_path": -4.943445366947693,
+      "ev_myopic": -0.44268706016382914,
+      "ev_path": -4.9542752792642615,
       "path_feasible": true,
       "implied_path": {
         "2": "CHI",
@@ -223,7 +223,7 @@
         "18": "NE"
       },
       "rank": 6,
-      "pick_score": 87.8
+      "pick_score": 87.2
     },
     {
       "team": "KC",
@@ -820,17 +820,17 @@
     {
       "team": "MIN",
       "team_name": "Minnesota Vikings",
-      "win_prob": 0.318518656092714,
+      "win_prob": 0.32579625577437393,
       "pub_pick_pct": 0.001,
       "exp_pool_share": 0.0,
       "exp_pool_opponents": 0.0,
       "future_value": 0.08044544644347054,
       "fv_penalty": 0.028155906255214688,
       "consensus_penalty": 0.0,
-      "contrarian_bonus": 0.003887529334149187,
-      "rest_of_season_logwp": -4.460766834631523,
-      "ev_myopic": -1.1683426077470398,
-      "ev_path": -5.629109442378562,
+      "contrarian_bonus": 0.003980922300658253,
+      "rest_of_season_logwp": -4.460766834631522,
+      "ev_myopic": -1.1456580592400234,
+      "ev_path": -5.606424893871545,
       "path_feasible": true,
       "implied_path": {
         "2": "MIN",
@@ -852,7 +852,7 @@
         "18": "NE"
       },
       "rank": 23,
-      "pick_score": 49.8
+      "pick_score": 51.1
     },
     {
       "team": "LV",

@@ -9,6 +9,7 @@
 <body>
   <header class="page-header">
     <h1>Survivor LMS</h1>
+    <p id="pool-size" class="pool-size"></p>
     <p id="week-line" class="muted">Loading…</p>
   </header>
 
@@ -35,15 +36,12 @@
         </div>
       </div>
 
-      <div class="grid-2 chart-pair">
-        <div class="chart-pane">
-          <h3>Teams Remaining</h3>
-          <img id="chart-teams-remaining" alt="Teams remaining chart" loading="lazy">
+      <div class="chart-viewer">
+        <div class="chart-viewer-head">
+          <h3>Charts</h3>
+          <select id="shared-chart-select"></select>
         </div>
-        <div class="chart-pane">
-          <h3>Win Probability</h3>
-          <img id="chart-win-probability" alt="Win probability chart" loading="lazy">
-        </div>
+        <img id="shared-chart-img" alt="Chart" loading="lazy">
       </div>
     </section>
 

@@ -45,6 +45,7 @@ h3{
   display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap;
 }
 .caption{ font-size: .74rem; color: var(--ink-muted); letter-spacing: .01em; }
+.pool-size{ margin: 2px 0 0; font-size: 1rem; font-weight: 700; color: var(--ink); }
 
 .grid-2{ display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 @media (max-width: 640px){ .grid-2{ grid-template-columns: 1fr; } }
@@ -95,10 +96,6 @@ td.plan-cell{ font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; 
   border-radius: 6px; padding: 16px 18px;
 }
 .table-panel:empty{ display: none; }
-
-.chart-pair{ margin-top: 20px; }
-.chart-pane h3{ padding-bottom: 8px; border-bottom: 1.5px solid var(--divider); }
-.chart-pane img{ display: block; width: 100%; height: auto; border-radius: 4px; background: #fff; border: 1px solid var(--line); }
 
 .chart-viewer{
   margin-top: 20px; background: var(--surface); border: 1px solid var(--line);

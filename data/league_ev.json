@@ -1,6 +1,6 @@
 {
   "week": 2,
-  "generated_at": "2026-09-16T16:46:21.100942+00:00",
+  "generated_at": "2026-09-16T16:57:57.150871+00:00",
   "teams": [
     {
       "team": "TB",
@@ -190,17 +190,17 @@
     {
       "team": "CHI",
       "team_name": "Chicago Bears",
-      "win_prob": 0.681481343907286,
+      "win_prob": 0.6742037442256261,
       "pub_pick_pct": 0.015,
       "exp_pool_share": 0.0,
       "exp_pool_opponents": 0.0,
       "future_value": 0.15461757325294415,
       "fv_penalty": 0.054116150638530446,
       "consensus_penalty": 0.0,
-      "contrarian_bonus": 0.005518516798841075,
+      "contrarian_bonus": 0.005427546802820327,
       "rest_of_season_logwp": -4.511588219100432,
-      "ev_myopic": -0.43208403710427706,
-      "ev_path": -4.943672256204708,
+      "ev_myopic": -0.4429115264503561,
+      "ev_path": -4.954499745550788,
       "path_feasible": true,
       "implied_path": {
         "2": "CHI",
@@ -222,7 +222,7 @@
         "18": "NE"
       },
       "rank": 6,
-      "pick_score": 87.8
+      "pick_score": 87.2
     },
     {
       "team": "KC",
@@ -856,17 +856,17 @@
     {
       "team": "MIN",
       "team_name": "Minnesota Vikings",
-      "win_prob": 0.318518656092714,
+      "win_prob": 0.32579625577437393,
       "pub_pick_pct": 0.001,
       "exp_pool_share": 0.0,
       "exp_pool_opponents": 0.0,
       "future_value": 0.08044544644347054,
       "fv_penalty": 0.028155906255214688,
       "consensus_penalty": 0.0,
-      "contrarian_bonus": 0.003781483201158925,
-      "rest_of_season_logwp": -4.460766834631523,
-      "ev_myopic": -1.16844865388003,
-      "ev_path": -5.629215488511552,
+      "contrarian_bonus": 0.003872453197179674,
+      "rest_of_season_logwp": -4.460766834631522,
+      "ev_myopic": -1.145766528343502,
+      "ev_path": -5.606533362975024,
       "path_feasible": true,
       "implied_path": {
         "2": "MIN",
@@ -888,7 +888,7 @@
         "18": "NE"
       },
       "rank": 24,
-      "pick_score": 49.8
+      "pick_score": 51.1
     },
     {
       "team": "LV",

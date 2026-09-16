@@ -214,8 +214,10 @@ async function loadShared() {
 // Chart viewer -- a dropdown + <img> pair, fed by the actual branded PNGs
 // report.py already generates (win probability, pick distribution, best
 // picks, ranked table, and -- shared only -- teams remaining pool-wide).
-// Used for the personal, per-member section only; the League-wide section
-// shows a fixed pair (teams remaining + win probability) instead, below.
+// Reused for both the League-wide section (teams remaining + win
+// probability only, teams remaining first/default -- the other three
+// already have native equivalents in the panels above) and the personal,
+// per-member section (all 4 of that member's own charts).
 // ---------------------------------------------------------------------
 function wireChartViewer(selectEl, imgEl, basePath, charts) {
   selectEl.innerHTML = "";
@@ -240,14 +242,20 @@ const chartManifestPromise = getJSON("data/charts/manifest.json").catch(() => ({
 
 async function loadSharedCharts() {
   const manifest = await chartManifestPromise;
-  const byKey = (key) => (manifest.shared || []).find(c => c.key === key);
-  const show = (imgId, chart) => {
-    const img = document.getElementById(imgId);
-    if (chart) { img.src = "data/charts/shared/" + chart.file; img.alt = chart.label; }
-    else { img.removeAttribute("src"); img.alt = "Not available yet"; }
-  };
-  show("chart-teams-remaining", byKey("teams_remaining"));
-  show("chart-win-probability", byKey("win_probability"));
+  const order = ["teams_remaining", "win_probability"];
+  const charts = order
+    .map(key => (manifest.shared || []).find(c => c.key === key))
+    .filter(Boolean);
+  wireChartViewer(
+    document.getElementById("shared-chart-select"),
+    document.getElementById("shared-chart-img"),
+    "data/charts/shared/",
+    charts,
+  );
+
+  const total = (manifest.shared || []).find(c => c.key === "teams_remaining")?.total_entries;
+  const poolSize = document.getElementById("pool-size");
+  poolSize.textContent = total ? `${total.toLocaleString()} pool entries tracked` : "";
 }
 
 // ---------------------------------------------------------------------

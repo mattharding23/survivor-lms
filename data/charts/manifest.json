@@ -1,6 +1,6 @@
 {
   "week": 2,
-  "generated_at": "2026-09-16T16:47:07.066875+00:00",
+  "generated_at": "2026-09-16T16:58:38.697626+00:00",
   "shared": [
     {
       "key": "win_probability",
@@ -25,7 +25,8 @@
     {
       "key": "teams_remaining",
       "label": "Teams Remaining (whole pool)",
-      "file": "week_02_teams_remaining.png"
+      "file": "week_02_teams_remaining.png",
+      "total_entries": 13655
     }
   ],
   "members": {
