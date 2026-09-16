@@ -53,9 +53,23 @@ h3{
 .panel + .panel{ border-left: 1px solid var(--line); padding-left: 20px; }
 @media (max-width: 640px){ .panel + .panel{ border-left: none; padding-left: 0; border-top: 1px solid var(--line); padding-top: 16px; } }
 
-.bars{ display: flex; flex-direction: column; gap: 7px; }
-.bar-row{ display: grid; grid-template-columns: 22px 38px 1fr 40px; align-items: center; gap: 8px; font-size: .82rem; }
-.bar-row .logo{ width: 20px; height: 20px; object-fit: contain; }
+/* Both League-wide panels get the same two-line header (title, then a
+   column-label row) so their N-th data row lands at the same Y in both --
+   the bars panel previously had only a title, one header line short of the
+   table, so every row below it crept out of alignment with its table row. */
+.panel h3{ margin: 0 0 10px; }
+.col-labels{
+  display: grid; grid-template-columns: 22px 38px 1fr 40px; gap: 8px;
+  padding-bottom: 8px; border-bottom: 1.5px solid var(--divider);
+  color: var(--ink-muted); font-weight: 700; font-size: .7rem; text-transform: uppercase; letter-spacing: .04em;
+}
+.col-labels .r{ text-align: right; }
+.bars{ display: flex; flex-direction: column; }
+.bar-row{
+  display: grid; grid-template-columns: 22px 38px 1fr 40px; align-items: center; gap: 8px;
+  font-size: .85rem; padding: 7px 0;
+}
+.bar-row .logo{ width: 18px; height: 18px; object-fit: contain; }
 .bar-row .abbr{ font-weight: 700; font-variant-numeric: tabular-nums; }
 .bar-track{ background: var(--line); border-radius: 2px; height: 11px; overflow: hidden; }
 .bar-fill{ display: block; height: 100%; opacity: .92; } /* span is inline by default -- width is a no-op without this */
@@ -68,6 +82,7 @@ th{
   color: var(--ink-muted); font-weight: 700; font-size: .7rem; text-transform: uppercase;
   letter-spacing: .04em; border-bottom: 1.5px solid var(--divider); padding-bottom: 8px;
 }
+#league-table td:first-child, #league-table th:first-child{ padding-left: 0; }
 tbody tr:nth-child(even){ background: var(--stripe); }
 tbody tr.is-rec{ background: var(--rec-bg); outline: 1.5px solid var(--rec-border); outline-offset: -1.5px; }
 td.team-cell{ display: flex; align-items: center; gap: 7px; font-weight: 700; }
@@ -80,6 +95,10 @@ td.plan-cell{ font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; 
   border-radius: 6px; padding: 16px 18px;
 }
 .table-panel:empty{ display: none; }
+
+.chart-pair{ margin-top: 20px; }
+.chart-pane h3{ padding-bottom: 8px; border-bottom: 1.5px solid var(--divider); }
+.chart-pane img{ display: block; width: 100%; height: auto; border-radius: 4px; background: #fff; border: 1px solid var(--line); }
 
 .chart-viewer{
   margin-top: 20px; background: var(--surface); border: 1px solid var(--line);

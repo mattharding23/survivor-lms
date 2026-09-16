@@ -19,6 +19,7 @@
       <div class="grid-2">
         <div class="panel">
           <h3>Public Pick Distribution <span class="muted" id="pct-source"></span></h3>
+          <div class="col-labels"><span></span><span>Team</span><span></span><span class="r">Public %</span></div>
           <div id="pct-bars" class="bars"></div>
         </div>
         <div class="panel">
@@ -34,12 +35,15 @@
         </div>
       </div>
 
-      <div class="chart-viewer">
-        <div class="chart-viewer-head">
-          <h3>Charts</h3>
-          <select id="shared-chart-select"></select>
+      <div class="grid-2 chart-pair">
+        <div class="chart-pane">
+          <h3>Teams Remaining</h3>
+          <img id="chart-teams-remaining" alt="Teams remaining chart" loading="lazy">
         </div>
-        <img id="shared-chart-img" alt="Chart" loading="lazy">
+        <div class="chart-pane">
+          <h3>Win Probability</h3>
+          <img id="chart-win-probability" alt="Win probability chart" loading="lazy">
+        </div>
       </div>
     </section>
 

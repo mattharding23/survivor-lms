@@ -186,7 +186,7 @@ function renderPctBars(pct, source) {
 
 function renderLeagueTable(teams) {
   const tbody = document.querySelector("#league-table tbody");
-  tbody.innerHTML = teams.slice(0, 15).map(t => {
+  tbody.innerHTML = teams.slice(0, 12).map(t => { // matches the pick-distribution bars' count so rows line up
     const wc = winProbColor(t.win_prob);
     return `
     <tr class="${t.rank === 1 ? "is-rec" : ""}">
@@ -214,8 +214,8 @@ async function loadShared() {
 // Chart viewer -- a dropdown + <img> pair, fed by the actual branded PNGs
 // report.py already generates (win probability, pick distribution, best
 // picks, ranked table, and -- shared only -- teams remaining pool-wide).
-// Same pair of elements is reused for the shared section and swapped per
-// member in the personal section.
+// Used for the personal, per-member section only; the League-wide section
+// shows a fixed pair (teams remaining + win probability) instead, below.
 // ---------------------------------------------------------------------
 function wireChartViewer(selectEl, imgEl, basePath, charts) {
   selectEl.innerHTML = "";
@@ -240,12 +240,14 @@ const chartManifestPromise = getJSON("data/charts/manifest.json").catch(() => ({
 
 async function loadSharedCharts() {
   const manifest = await chartManifestPromise;
-  wireChartViewer(
-    document.getElementById("shared-chart-select"),
-    document.getElementById("shared-chart-img"),
-    "data/charts/shared/",
-    manifest.shared,
-  );
+  const byKey = (key) => (manifest.shared || []).find(c => c.key === key);
+  const show = (imgId, chart) => {
+    const img = document.getElementById(imgId);
+    if (chart) { img.src = "data/charts/shared/" + chart.file; img.alt = chart.label; }
+    else { img.removeAttribute("src"); img.alt = "Not available yet"; }
+  };
+  show("chart-teams-remaining", byKey("teams_remaining"));
+  show("chart-win-probability", byKey("win_probability"));
 }
 
 // ---------------------------------------------------------------------
