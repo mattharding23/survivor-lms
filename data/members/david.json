@@ -1,7 +1,7 @@
 {
   "member": "David",
   "week": 2,
-  "generated_at": "2026-09-16T16:19:27.736510+00:00",
+  "generated_at": "2026-09-16T16:37:15.066977+00:00",
   "teams": [
     {
       "team": "TB",
@@ -44,7 +44,7 @@
       "team": "SF",
       "team_name": "San Francisco 49ers",
       "win_prob": 0.8737083811710676,
-      "pub_pick_pct": 0.295,
+      "pub_pick_pct": 0.294,
       "exp_pool_share": 0.0,
       "exp_pool_opponents": 0.0,
       "future_value": 0.30172571089920697,
@@ -118,7 +118,7 @@
       "team": "PHI",
       "team_name": "Philadelphia Eagles",
       "win_prob": 0.7429305912596401,
-      "pub_pick_pct": 0.12300000000000001,
+      "pub_pick_pct": 0.124,
       "exp_pool_share": 0.0,
       "exp_pool_opponents": 0.0,
       "future_value": 0.15537215966192208,
@@ -229,16 +229,16 @@
       "team": "KC",
       "team_name": "Kansas City Chiefs",
       "win_prob": 0.7147663277993125,
-      "pub_pick_pct": 0.023,
+      "pub_pick_pct": 0.024,
       "exp_pool_share": 0.0,
       "exp_pool_opponents": 0.0,
       "future_value": 0.3958996607232635,
       "fv_penalty": 0.1385648812531422,
       "consensus_penalty": 0.0,
-      "contrarian_bonus": 0.004496747770724352,
+      "contrarian_bonus": 0.004296747770724352,
       "rest_of_season_logwp": -4.5167513530738415,
-      "ev_myopic": -0.4698677374526638,
-      "ev_path": -4.9866190905265055,
+      "ev_myopic": -0.4700677374526638,
+      "ev_path": -4.986819090526505,
       "path_feasible": true,
       "implied_path": {
         "2": "KC",
@@ -413,17 +413,17 @@
     {
       "team": "LA",
       "team_name": "Los Angeles Rams",
-      "win_prob": 0.7402209614810391,
+      "win_prob": 0.747191011235955,
       "pub_pick_pct": 0.015,
       "exp_pool_share": 0.0,
       "exp_pool_opponents": 0.0,
       "future_value": 0.40007551103284666,
       "fv_penalty": 0.14002642886149633,
       "consensus_penalty": 0.0,
-      "contrarian_bonus": 0.006420705927667452,
+      "contrarian_bonus": 0.006509412938761672,
       "rest_of_season_logwp": -4.672834435504141,
-      "ev_myopic": -0.4344122636928429,
-      "ev_path": -5.107246699196984,
+      "ev_myopic": -0.4249514379930661,
+      "ev_path": -5.097785873497207,
       "path_feasible": true,
       "implied_path": {
         "2": "LA",
@@ -445,7 +445,7 @@
         "18": "HOU"
       },
       "rank": 12,
-      "pick_score": 78.7
+      "pick_score": 79.3
     },
     {
       "team": "BUF",
@@ -1005,17 +1005,17 @@
     {
       "team": "NYG",
       "team_name": "New York Giants",
-      "win_prob": 0.2597790385189609,
+      "win_prob": 0.2528089887640449,
       "pub_pick_pct": 0.001,
       "exp_pool_share": 0.0,
       "exp_pool_opponents": 0.0,
       "future_value": 0.12969477313107192,
       "fv_penalty": 0.045393170595875165,
       "consensus_penalty": 0.0,
-      "contrarian_bonus": 0.0031061775542842607,
-      "rest_of_season_logwp": -4.460766834631522,
-      "ev_myopic": -1.390210854187166,
-      "ev_path": -5.850977688818688,
+      "contrarian_bonus": 0.003017470543190039,
+      "rest_of_season_logwp": -4.460766834631523,
+      "ev_myopic": -1.4174967605744508,
+      "ev_path": -5.878263595205973,
       "path_feasible": true,
       "implied_path": {
         "2": "NYG",
@@ -1037,7 +1037,7 @@
         "18": "NE"
       },
       "rank": 28,
-      "pick_score": 37.5
+      "pick_score": 36.0
     },
     {
       "team": "CLE",
