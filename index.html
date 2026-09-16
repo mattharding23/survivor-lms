@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Survivor LMS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <h1>Survivor LMS</h1>
+    <p id="week-line" class="muted">Loading…</p>
+  </header>
+
+  <main>
+    <section id="shared" aria-label="League-wide data">
+      <h2>League-wide</h2>
+      <div class="grid-2">
+        <div class="panel">
+          <h3>Public pick % <span class="muted" id="pct-source"></span></h3>
+          <div id="pct-bars" class="bars"></div>
+        </div>
+        <div class="panel">
+          <h3>Ranked by expected weeks survived</h3>
+          <div class="tablewrap">
+            <table id="league-table">
+              <thead>
+                <tr><th>#</th><th>Team</th><th>Win %</th><th>Public %</th><th>Pick score</th></tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="personal" aria-label="Personal recommendation">
+      <div class="personal-head">
+        <h2>Your pick</h2>
+        <label for="member-select" class="muted">Group member</label>
+        <select id="member-select"></select>
+      </div>
+      <article id="personal-md" class="markdown">
+        <p class="muted">Select a name above.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p class="muted">Generated automatically every Wednesday. Static data only — nothing here is fetched live.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
