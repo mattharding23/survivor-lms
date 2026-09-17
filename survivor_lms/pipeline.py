@@ -5,14 +5,13 @@ import pandas as pd
 
 from .config import Config
 from survivor_core.constraints import Roster, load_used_teams
-from survivor_core.consensus import expected_duplication, fetch_public_pick_pct
+from survivor_core.consensus import fetch_public_pick_pct
 from survivor_core.elo import EloModel
 from .engine import Optimizer
 from . import lms as lms_mod
 from .report import write_outputs
 from survivor_core.schedule import load_history, load_season_schedule
 from survivor_core import survivorgrid as sg_mod
-from survivor_core.teams import ABBRS
 from survivor_core.winprob import build_winprob_matrix
 
 
@@ -75,18 +74,28 @@ def run(current_week: int, force_refresh: bool = False, cfg: Config | None = Non
 
     roster = Roster.load(cfg.participants_csv)
 
-    # availability this week for the crowd model
-    avail_week = pd.Series(
-        {t: (current_week in wp.columns and pd.notna(wp.loc[t, current_week])
-             and wp.loc[t, current_week] > 0.0 and t not in used) for t in ABBRS})
-
     real_pct, real_meta = lms_mod.load_pick_pct(cfg, current_week)
     if real_pct is not None:
         public_pct, cmeta = real_pct, real_meta
     else:
         public_pct, cmeta = fetch_public_pick_pct(
             current_week, wp_week=wp[current_week] if current_week in wp.columns else None, sg=sg)
-    crowd = expected_duplication(current_week, wp, public_pct, roster, avail_week)
+
+    # Use public_pct directly as each team's expected duplication share,
+    # whether it's real (workbook COUNT sheet) or a SurvivorGrid/heuristic
+    # estimate, rather than expected_duplication()'s roster simulation below
+    # -- that needs a hand-tracked opponent list (lms/participants.csv)
+    # that's normally empty for this pool, which silently made
+    # consensus_penalty a no-op (exp_share was always 0, nothing to loop
+    # over). Looping that per-opponent simulation over the real ~13.6k-entry
+    # field instead would also be far too slow to pay up to 8x per export.
+    total_pool = int(entries["entry"].nunique()) or 1
+    crowd = pd.DataFrame({
+        "pub_pct": public_pct,
+        "exp_opponents": public_pct * total_pool,
+        "exp_share": public_pct,
+        "known_opponents": 0,
+    })
 
     opt = Optimizer(wp, schedule, cfg, used)
     result = opt.run(crowd)
