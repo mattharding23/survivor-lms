@@ -186,7 +186,10 @@ function renderPctBars(pct, source) {
 
 function renderLeagueTable(teams) {
   const tbody = document.querySelector("#league-table tbody");
-  tbody.innerHTML = teams.slice(0, 12).map(t => { // matches the pick-distribution bars' count so rows line up
+  // Explicit sort by rank (== descending Score, the engine's actual ranking
+  // metric -- not win %) rather than trusting the fetched array's order.
+  const rows = [...teams].sort((a, b) => a.rank - b.rank);
+  tbody.innerHTML = rows.slice(0, 12).map(t => { // matches the pick-distribution bars' count so rows line up
     const wc = winProbColor(t.win_prob);
     return `
     <tr class="${t.rank === 1 ? "is-rec" : ""}">
