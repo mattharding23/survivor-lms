@@ -230,6 +230,23 @@ def main() -> int:
     member_charts = {}
     for name in members:
         res = run(week, force_refresh=False, cfg=cfg, member=name)
+        slug = _slugify(name)
+        elim_week = res["meta"].get("eliminated_week")
+        if elim_week is not None:
+            # Single elimination, no consolation -- once they're out they're out
+            # for the season. Still write a small notice at their own slug (in
+            # case anyone has it bookmarked) but drop them from index.json so
+            # the site's member dropdown -- the dashboard -- no longer offers
+            # a pick recommendation for someone who's done.
+            _write_json(SITE_DATA / "members" / f"{slug}.json", dict(
+                member=name, week=week, generated_at=_now(),
+                eliminated=True, eliminated_week=elim_week,
+            ))
+            (SITE_DATA / "members" / f"{slug}.md").write_text(
+                f"# {name} — eliminated\n\n"
+                f"Out of the pool as of Week {elim_week} (single elimination, no consolation).\n")
+            print(f"[export] {name} eliminated Week {elim_week} -- dropped from dashboard")
+            continue
         slug = export_member(week, name, res)
         member_charts[slug] = copy_charts(res["report"].get("charts", []), SITE_DATA / "charts" / slug)
         index.append(dict(name=name, slug=slug))

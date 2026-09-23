@@ -44,6 +44,10 @@ def main() -> int:
 
     for m in members:
         res = run(args.week, force_refresh=args.refresh, cfg=cfg, member=m)
+        elim_week = res["meta"].get("eliminated_week")
+        if elim_week is not None:
+            print(f"\n[lms] {m} was eliminated in Week {elim_week} -- no consolation in this "
+                 f"pool, recommendation below is moot.")
         print("\n" + res["report"]["markdown"])
         print(f"\nWritten to: {res['report']['dir']}")
     return 0

@@ -72,6 +72,9 @@ def run(current_week: int, force_refresh: bool = False, cfg: Config | None = Non
         used |= lms_mod.member_used_teams(entries, entry_name, current_week)
     used = sorted(used)
 
+    eliminated_week = (lms_mod.member_eliminated_week(entries, wp, entry_name)
+                       if entry_name else None)
+
     roster = Roster.load(cfg.participants_csv)
 
     real_pct, real_meta = lms_mod.load_pick_pct(cfg, current_week)
@@ -108,6 +111,7 @@ def run(current_week: int, force_refresh: bool = False, cfg: Config | None = Non
         n_alive=roster.n_opponents_alive(),
         member=member,
         entry_name=entry_name,
+        eliminated_week=eliminated_week,
     )
     result["elo_top"] = elo.ratings_frame().head(10).to_dict("records")
     result["winprob_matrix"] = wp

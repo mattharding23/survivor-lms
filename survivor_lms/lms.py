@@ -167,3 +167,22 @@ def member_known_pick(entries: pd.DataFrame, entry_name: str, week: int) -> str 
     m = entries["entry"].eq(entry_name) & entries["week"].eq(week)
     vals = entries.loc[m, "team"].tolist()
     return vals[0] if vals else None
+
+
+def member_eliminated_week(entries: pd.DataFrame, wp: pd.DataFrame, entry_name: str) -> int | None:
+    """First week (if any) this member's pick actually lost, per the win-prob
+    matrix (1.0/0.0 for decided games, sourced from real results). LMS is
+    plain single elimination -- no consolation, no buy-back -- so one
+    realized loss ends their run. None if still alive, or they have no
+    logged picks yet."""
+    if entries.empty:
+        return None
+    picks = entries[entries["entry"] == entry_name].sort_values("week")
+    for _, r in picks.iterrows():
+        wk, team = int(r["week"]), r["team"]
+        if team not in wp.index or wk not in wp.columns:
+            continue
+        pw = wp.loc[team, wk]
+        if pd.notna(pw) and pw < 0.5:
+            return wk
+    return None
