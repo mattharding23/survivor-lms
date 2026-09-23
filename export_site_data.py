@@ -132,7 +132,22 @@ def copy_charts(chart_paths: list[str], dest_dir: Path) -> list[dict]:
     return out
 
 
-def export_pool_remaining(cfg: Config, week: int, entries: pd.DataFrame) -> dict | None:
+def _pool_alive_count(entries: pd.DataFrame, wp: pd.DataFrame, before_week: int) -> int:
+    """How many of the whole field have NOT had a picked team actually lose
+    yet, per the real win-prob matrix (1.0/0.0 for decided games) -- LMS is
+    plain single elimination, no consolation. Cheap: a dict lookup per row,
+    not the per-opponent Roster/beam-search simulation the EV path avoids
+    for this pool's ~14k entries."""
+    past = entries[entries["week"] < before_week]
+    wp_map = {(t, w): p for t in wp.index for w in wp.columns
+             for p in [wp.loc[t, w]] if pd.notna(p)}
+    lost = {e for e, t, w in past[["entry", "team", "week"]].itertuples(index=False)
+           if wp_map.get((t, w), 1.0) < 0.5}
+    return entries["entry"].nunique() - len(lost)
+
+
+def export_pool_remaining(cfg: Config, week: int, entries: pd.DataFrame,
+                          wp: pd.DataFrame) -> dict | None:
     """"Teams Still Available Across the Pool" -- how many of the whole LMS
     field (every entry in the pool operator's workbook, not just the tracked
     group) have NOT used each team yet. Built straight from the real
@@ -144,6 +159,7 @@ def export_pool_remaining(cfg: Config, week: int, entries: pd.DataFrame) -> dict
     total = int(entries["entry"].nunique())
     if total == 0:
         return None
+    alive = _pool_alive_count(entries, wp, week)
     used = entries[entries["week"] < week].drop_duplicates(["entry", "team"])
     used_counts = used["team"].value_counts()
     rows = [dict(team=t, players_left=total - int(used_counts.get(t, 0)), total_players_left=total)
@@ -154,7 +170,7 @@ def export_pool_remaining(cfg: Config, week: int, entries: pd.DataFrame) -> dict
     out_path = dest_dir / f"week_{week:02d}_teams_remaining.png"
     viz_mod.people_remaining(df, cfg, out_path, pool_label="Whole LMS pool")
     return dict(key="teams_remaining", label=CHART_LABELS["teams_remaining"], file=out_path.name,
-               total_entries=total)
+               total_entries=total, alive_entries=alive)
 
 
 def export_shared(cfg: Config, week: int, result: dict) -> None:
@@ -220,7 +236,7 @@ def main() -> int:
     shared_charts = copy_charts(shared["report"].get("charts", []), SITE_DATA / "charts" / "shared")
 
     entries = lms_mod.load_all_entries(cfg)
-    remaining_chart = export_pool_remaining(cfg, week, entries)
+    remaining_chart = export_pool_remaining(cfg, week, entries, shared["winprob_matrix"])
     if remaining_chart:
         shared_charts.append(remaining_chart)
     print(f"[export] shared charts: {', '.join(c['key'] for c in shared_charts) or '(none)'}")
