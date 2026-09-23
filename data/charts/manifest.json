@@ -1,32 +1,32 @@
 {
-  "week": 2,
-  "generated_at": "2026-09-17T14:27:57.121170+00:00",
+  "week": 3,
+  "generated_at": "2026-09-23T13:46:12.603076+00:00",
   "shared": [
     {
       "key": "win_probability",
       "label": "Win Probability",
-      "file": "week_02_win_probability.png"
+      "file": "week_03_win_probability.png"
     },
     {
       "key": "pick_distribution",
       "label": "Pick Distribution",
-      "file": "week_02_pick_distribution.png"
+      "file": "week_03_pick_distribution.png"
     },
     {
       "key": "best_picks",
       "label": "Best Picks",
-      "file": "week_02_best_picks.png"
+      "file": "week_03_best_picks.png"
     },
     {
       "key": "ranked_table",
       "label": "Ranked Table",
-      "file": "week_02_ranked_table.png"
+      "file": "week_03_ranked_table.png"
     },
     {
       "key": "teams_remaining",
       "label": "Teams Remaining (whole pool)",
-      "file": "week_02_teams_remaining.png",
-      "total_entries": 13655
+      "file": "week_03_teams_remaining.png",
+      "total_entries": 13683
     }
   ],
   "members": {
@@ -34,154 +34,154 @@
       {
         "key": "win_probability",
         "label": "Win Probability",
-        "file": "week_02_win_probability.png"
+        "file": "week_03_win_probability.png"
       },
       {
         "key": "pick_distribution",
         "label": "Pick Distribution",
-        "file": "week_02_pick_distribution.png"
+        "file": "week_03_pick_distribution.png"
       },
       {
         "key": "best_picks",
         "label": "Best Picks",
-        "file": "week_02_best_picks.png"
+        "file": "week_03_best_picks.png"
       },
       {
         "key": "ranked_table",
         "label": "Ranked Table",
-        "file": "week_02_ranked_table.png"
+        "file": "week_03_ranked_table.png"
       }
     ],
     "jordan": [
       {
         "key": "win_probability",
         "label": "Win Probability",
-        "file": "week_02_win_probability.png"
+        "file": "week_03_win_probability.png"
       },
       {
         "key": "pick_distribution",
         "label": "Pick Distribution",
-        "file": "week_02_pick_distribution.png"
+        "file": "week_03_pick_distribution.png"
       },
       {
         "key": "best_picks",
         "label": "Best Picks",
-        "file": "week_02_best_picks.png"
+        "file": "week_03_best_picks.png"
       },
       {
         "key": "ranked_table",
         "label": "Ranked Table",
-        "file": "week_02_ranked_table.png"
+        "file": "week_03_ranked_table.png"
       }
     ],
     "catherine": [
       {
         "key": "win_probability",
         "label": "Win Probability",
-        "file": "week_02_win_probability.png"
+        "file": "week_03_win_probability.png"
       },
       {
         "key": "pick_distribution",
         "label": "Pick Distribution",
-        "file": "week_02_pick_distribution.png"
+        "file": "week_03_pick_distribution.png"
       },
       {
         "key": "best_picks",
         "label": "Best Picks",
-        "file": "week_02_best_picks.png"
+        "file": "week_03_best_picks.png"
       },
       {
         "key": "ranked_table",
         "label": "Ranked Table",
-        "file": "week_02_ranked_table.png"
+        "file": "week_03_ranked_table.png"
       }
     ],
     "gunner": [
       {
         "key": "win_probability",
         "label": "Win Probability",
-        "file": "week_02_win_probability.png"
+        "file": "week_03_win_probability.png"
       },
       {
         "key": "pick_distribution",
         "label": "Pick Distribution",
-        "file": "week_02_pick_distribution.png"
+        "file": "week_03_pick_distribution.png"
       },
       {
         "key": "best_picks",
         "label": "Best Picks",
-        "file": "week_02_best_picks.png"
+        "file": "week_03_best_picks.png"
       },
       {
         "key": "ranked_table",
         "label": "Ranked Table",
-        "file": "week_02_ranked_table.png"
+        "file": "week_03_ranked_table.png"
       }
     ],
     "big-dave": [
       {
         "key": "win_probability",
         "label": "Win Probability",
-        "file": "week_02_win_probability.png"
+        "file": "week_03_win_probability.png"
       },
       {
         "key": "pick_distribution",
         "label": "Pick Distribution",
-        "file": "week_02_pick_distribution.png"
+        "file": "week_03_pick_distribution.png"
       },
       {
         "key": "best_picks",
         "label": "Best Picks",
-        "file": "week_02_best_picks.png"
+        "file": "week_03_best_picks.png"
       },
       {
         "key": "ranked_table",
         "label": "Ranked Table",
-        "file": "week_02_ranked_table.png"
+        "file": "week_03_ranked_table.png"
       }
     ],
     "david": [
       {
         "key": "win_probability",
         "label": "Win Probability",
-        "file": "week_02_win_probability.png"
+        "file": "week_03_win_probability.png"
       },
       {
         "key": "pick_distribution",
         "label": "Pick Distribution",
-        "file": "week_02_pick_distribution.png"
+        "file": "week_03_pick_distribution.png"
       },
       {
         "key": "best_picks",
         "label": "Best Picks",
-        "file": "week_02_best_picks.png"
+        "file": "week_03_best_picks.png"
       },
       {
         "key": "ranked_table",
         "label": "Ranked Table",
-        "file": "week_02_ranked_table.png"
+        "file": "week_03_ranked_table.png"
       }
     ],
     "wil": [
       {
         "key": "win_probability",
         "label": "Win Probability",
-        "file": "week_02_win_probability.png"
+        "file": "week_03_win_probability.png"
       },
       {
         "key": "pick_distribution",
         "label": "Pick Distribution",
-        "file": "week_02_pick_distribution.png"
+        "file": "week_03_pick_distribution.png"
       },
       {
         "key": "best_picks",
         "label": "Best Picks",
-        "file": "week_02_best_picks.png"
+        "file": "week_03_best_picks.png"
       },
       {
         "key": "ranked_table",
         "label": "Ranked Table",
-        "file": "week_02_ranked_table.png"
+        "file": "week_03_ranked_table.png"
       }
     ]
   }
