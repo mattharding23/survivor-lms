@@ -63,10 +63,20 @@ def load_members(cfg: Config) -> dict[str, str]:
 
 
 def load_all_entries(cfg: Config) -> pd.DataFrame:
-    """Every entrant's pick in every 'WEEK n' sheet -> long DataFrame(entry, week, team).
+    """Every entrant's pick in every real week -> long DataFrame(entry, week, team).
 
-    Unparsable team names (typos, blanks, mid-season header rows) are silently
-    skipped rather than raising -- this file has ~14k rows of messy human input.
+    The real export is one wide sheet (its tab is just always called "WEEK 1",
+    never renamed): column 0 is the entrant identifier (header varies, e.g.
+    "ANIMAL") and each subsequent column is one week ("WEEK 1", "WEEK 2", ...)
+    holding either the team picked that week or "OUT" once eliminated (single
+    elimination, no consolation -- once OUT, no further pick). Detected per
+    sheet by its header row having 2+ columns matching "WEEK n"; falls back to
+    the simpler one-sheet-per-week layout (sheet itself named "WEEK n", column
+    A = entry, column B = team) for any workbook that uses that instead.
+
+    Unparsable team names/cells ("OUT", typos, blanks, mid-season header rows)
+    are silently skipped rather than raising -- this file has ~14k rows of
+    messy human input.
     """
     wb_path = find_workbook(cfg)
     if wb_path is None:
@@ -75,13 +85,37 @@ def load_all_entries(cfg: Config) -> pd.DataFrame:
     wb = openpyxl.load_workbook(wb_path, data_only=True, read_only=True)
     rows = []
     for name in wb.sheetnames:
+        ws = wb[name]
+        it = ws.iter_rows(values_only=True)
+        header = next(it, None)
+        if not header or header[0] is None:
+            continue
+        wk_cols = [(i, int(WEEK_SHEET_RE.match(str(h)).group(1))) for i, h in enumerate(header)
+                  if i > 0 and h is not None and WEEK_SHEET_RE.match(str(h))]
+        if wk_cols:
+            for r in it:
+                if not r or r[0] is None:
+                    continue
+                entry = str(r[0]).strip()
+                if not entry:
+                    continue
+                for col, week in wk_cols:
+                    if col >= len(r) or r[col] is None:
+                        continue
+                    cell = str(r[col]).strip()
+                    if not cell or cell.upper() == "OUT":
+                        continue
+                    try:
+                        team = to_abbr(cell)
+                    except KeyError:
+                        continue
+                    rows.append((entry, week, team))
+            continue
+
         m = WEEK_SHEET_RE.match(name)
         if not m:
             continue
         week = int(m.group(1))
-        ws = wb[name]
-        it = ws.iter_rows(values_only=True)
-        next(it, None)  # header row
         for r in it:
             if not r or r[0] is None or len(r) < 2 or r[1] is None:
                 continue
