@@ -1,19 +1,7 @@
 {
   "week": 3,
-  "generated_at": "2026-09-23T14:13:34.956779+00:00",
+  "generated_at": "2026-09-23T14:38:20.132845+00:00",
   "members": [
-    {
-      "name": "Matt",
-      "slug": "matt"
-    },
-    {
-      "name": "Jordan",
-      "slug": "jordan"
-    },
-    {
-      "name": "Catherine",
-      "slug": "catherine"
-    },
     {
       "name": "Gunner",
       "slug": "gunner"
@@ -21,14 +9,6 @@
     {
       "name": "Big Dave",
       "slug": "big-dave"
-    },
-    {
-      "name": "David",
-      "slug": "david"
-    },
-    {
-      "name": "Wil",
-      "slug": "wil"
     }
   ]
 }

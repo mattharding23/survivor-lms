@@ -1,22 +1,22 @@
 {
   "member": "Big Dave",
   "week": 3,
-  "generated_at": "2026-09-23T14:13:22.407703+00:00",
+  "generated_at": "2026-09-23T14:38:07.851456+00:00",
   "teams": [
     {
       "team": "SF",
       "team_name": "San Francisco 49ers",
       "win_prob": 0.773172033446006,
-      "pub_pick_pct": 0.08199999999999999,
-      "exp_pool_share": 0.08199999999999999,
-      "exp_pool_opponents": 1122.0059999999999,
+      "pub_pick_pct": 0.081,
+      "exp_pool_share": 0.081,
+      "exp_pool_opponents": 1108.323,
       "future_value": 0.18004217331889516,
       "fv_penalty": 0.06301476066161331,
-      "consensus_penalty": 0.0451,
+      "consensus_penalty": 0.044550000000000006,
       "contrarian_bonus": 0.0,
       "rest_of_season_logwp": -4.130957785966445,
-      "ev_myopic": -0.36536846284731334,
-      "ev_path": -4.496326248813759,
+      "ev_myopic": -0.3648184628473134,
+      "ev_path": -4.495776248813759,
       "path_feasible": true,
       "implied_path": {
         "3": "SF",
@@ -40,42 +40,6 @@
       "pick_score": 100.0
     },
     {
-      "team": "PHI",
-      "team_name": "Philadelphia Eagles",
-      "win_prob": 0.6705271565495208,
-      "pub_pick_pct": 0.018000000000000002,
-      "exp_pool_share": 0.018000000000000002,
-      "exp_pool_opponents": 246.29400000000004,
-      "future_value": 0.14131960928862294,
-      "fv_penalty": 0.04946186325101803,
-      "consensus_penalty": 0.009900000000000003,
-      "contrarian_bonus": 0.005104236806474993,
-      "rest_of_season_logwp": -4.130957785966445,
-      "ev_myopic": -0.4539487015869914,
-      "ev_path": -4.584906487553437,
-      "path_feasible": true,
-      "implied_path": {
-        "3": "PHI",
-        "4": "MIN",
-        "5": "DET",
-        "6": "LA",
-        "7": "HOU",
-        "8": "DAL",
-        "9": "SEA",
-        "10": "IND",
-        "11": "KC",
-        "12": "CIN",
-        "13": "DEN",
-        "14": "CHI",
-        "15": "GB",
-        "16": "BAL",
-        "17": "BUF",
-        "18": "NE"
-      },
-      "rank": 2,
-      "pick_score": 94.0
-    },
-    {
       "team": "NO",
       "team_name": "New Orleans Saints",
       "win_prob": 0.6168582375478927,
@@ -85,10 +49,10 @@
       "future_value": 0.01973097579956145,
       "fv_penalty": 0.006905841529846507,
       "consensus_penalty": 0.00825,
-      "contrarian_bonus": 0.005007550660992688,
+      "contrarian_bonus": 0.0053719059192041,
       "rest_of_season_logwp": -4.130957785966445,
-      "ev_myopic": -0.49326433320708424,
-      "ev_path": -4.62422211917353,
+      "ev_myopic": -0.4928999779488728,
+      "ev_path": -4.623857763915319,
       "path_feasible": true,
       "implied_path": {
         "3": "NO",
@@ -108,23 +72,23 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 3,
+      "rank": 2,
       "pick_score": 91.3
     },
     {
       "team": "DET",
       "team_name": "Detroit Lions",
       "win_prob": 0.7212543554006969,
-      "pub_pick_pct": 0.09,
-      "exp_pool_share": 0.09,
-      "exp_pool_opponents": 1231.47,
-      "future_value": 0.1899011027529362,
-      "fv_penalty": 0.06646538596352766,
-      "consensus_penalty": 0.0495,
+      "pub_pick_pct": 0.08900000000000001,
+      "exp_pool_share": 0.08900000000000001,
+      "exp_pool_opponents": 1217.787,
+      "future_value": 0.19678541538136002,
+      "fv_penalty": 0.068874895383476,
+      "consensus_penalty": 0.04895000000000001,
       "contrarian_bonus": 0.0,
       "rest_of_season_logwp": -4.201969674531311,
-      "ev_myopic": -0.4427288084577796,
-      "ev_path": -4.6446984829890905,
+      "ev_myopic": -0.44458831787772796,
+      "ev_path": -4.646557992409038,
       "path_feasible": true,
       "implied_path": {
         "3": "DET",
@@ -144,8 +108,8 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 4,
-      "pick_score": 89.9
+      "rank": 3,
+      "pick_score": 89.8
     },
     {
       "team": "SEA",
@@ -180,7 +144,7 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 5,
+      "rank": 4,
       "pick_score": 88.4
     },
     {
@@ -193,10 +157,10 @@
       "future_value": 0.0,
       "fv_penalty": 0.0,
       "consensus_penalty": 0.02145,
-      "contrarian_bonus": 0.0,
+      "contrarian_bonus": 9.249282417536781e-05,
       "rest_of_season_logwp": -4.130957785966446,
-      "ev_myopic": -0.5635355770513768,
-      "ev_path": -4.6944933630178225,
+      "ev_myopic": -0.5634430842272015,
+      "ev_path": -4.694400870193647,
       "path_feasible": true,
       "implied_path": {
         "3": "CAR",
@@ -216,23 +180,23 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 6,
+      "rank": 5,
       "pick_score": 86.5
     },
     {
       "team": "NYG",
       "team_name": "New York Giants",
       "win_prob": 0.5711159737417943,
-      "pub_pick_pct": 0.019,
-      "exp_pool_share": 0.019,
-      "exp_pool_opponents": 259.977,
+      "pub_pick_pct": 0.018000000000000002,
+      "exp_pool_share": 0.018000000000000002,
+      "exp_pool_opponents": 246.29400000000004,
       "future_value": 0.0,
       "fv_penalty": 0.0,
-      "consensus_penalty": 0.010450000000000001,
-      "contrarian_bonus": 0.003613761889958587,
+      "consensus_penalty": 0.009900000000000003,
+      "contrarian_bonus": 0.004151098891258172,
       "rest_of_season_logwp": -4.130957785966445,
-      "ev_myopic": -0.5669992216815526,
-      "ev_path": -4.6979570076479975,
+      "ev_myopic": -0.565911884680253,
+      "ev_path": -4.696869670646699,
       "path_feasible": true,
       "implied_path": {
         "3": "NYG",
@@ -252,23 +216,23 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 7,
+      "rank": 6,
       "pick_score": 86.3
     },
     {
       "team": "KC",
       "team_name": "Kansas City Chiefs",
       "win_prob": 0.8411122144985105,
-      "pub_pick_pct": 0.397,
-      "exp_pool_share": 0.397,
-      "exp_pool_opponents": 5432.151,
+      "pub_pick_pct": 0.396,
+      "exp_pool_share": 0.396,
+      "exp_pool_opponents": 5418.468,
       "future_value": 0.2688658884317225,
       "fv_penalty": 0.09410306095110287,
-      "consensus_penalty": 0.21835000000000002,
+      "consensus_penalty": 0.21780000000000002,
       "contrarian_bonus": 0.0,
       "rest_of_season_logwp": -4.244960879816102,
-      "ev_myopic": -0.48548325901761075,
-      "ev_path": -4.730444138833712,
+      "ev_myopic": -0.48493325901761075,
+      "ev_path": -4.729894138833712,
       "path_feasible": true,
       "implied_path": {
         "3": "KC",
@@ -288,7 +252,7 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 8,
+      "rank": 7,
       "pick_score": 84.1
     },
     {
@@ -301,10 +265,10 @@
       "future_value": 0.21120786077372508,
       "fv_penalty": 0.07392275127080378,
       "consensus_penalty": 0.00935,
-      "contrarian_bonus": 0.004836958351734884,
+      "contrarian_bonus": 0.005211751995157297,
       "rest_of_season_logwp": -4.2210361630412185,
-      "ev_myopic": -0.5333056207269159,
-      "ev_path": -4.754341783768134,
+      "ev_myopic": -0.5329308270834935,
+      "ev_path": -4.753966990124712,
       "path_feasible": true,
       "implied_path": {
         "3": "CIN",
@@ -324,7 +288,7 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 9,
+      "rank": 8,
       "pick_score": 82.5
     },
     {
@@ -337,10 +301,10 @@
       "future_value": 0.10900685121786308,
       "fv_penalty": 0.03815239792625207,
       "consensus_penalty": 0.0022,
-      "contrarian_bonus": 0.0067269053632140145,
+      "contrarian_bonus": 0.007069390557907335,
       "rest_of_season_logwp": -4.2178750718097175,
-      "ev_myopic": -0.5786424810773082,
-      "ev_path": -4.796517552887026,
+      "ev_myopic": -0.5782999958826148,
+      "ev_path": -4.7961750676923325,
       "path_feasible": true,
       "implied_path": {
         "3": "HOU",
@@ -360,23 +324,23 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 10,
+      "rank": 9,
       "pick_score": 79.6
     },
     {
       "team": "GB",
       "team_name": "Green Bay Packers",
       "win_prob": 0.701468452477005,
-      "pub_pick_pct": 0.132,
-      "exp_pool_share": 0.132,
-      "exp_pool_opponents": 1806.1560000000002,
+      "pub_pick_pct": 0.134,
+      "exp_pool_share": 0.134,
+      "exp_pool_opponents": 1833.5220000000002,
       "future_value": 0.10175913362590341,
       "fv_penalty": 0.035615696769066195,
-      "consensus_penalty": 0.07260000000000001,
+      "consensus_penalty": 0.07370000000000002,
       "contrarian_bonus": 0.0,
       "rest_of_season_logwp": -4.384441908275902,
-      "ev_myopic": -0.46279504874238164,
-      "ev_path": -4.847236957018285,
+      "ev_myopic": -0.46389504874238163,
+      "ev_path": -4.848336957018284,
       "path_feasible": true,
       "implied_path": {
         "3": "GB",
@@ -396,8 +360,8 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 11,
-      "pick_score": 76.2
+      "rank": 10,
+      "pick_score": 76.1
     },
     {
       "team": "TB",
@@ -409,10 +373,10 @@
       "future_value": 0.0,
       "fv_penalty": 0.0,
       "consensus_penalty": 0.00055,
-      "contrarian_bonus": 0.006008392640483394,
+      "contrarian_bonus": 0.006290883579269504,
       "rest_of_season_logwp": -4.130957785966445,
-      "ev_myopic": -0.7321405504902958,
-      "ev_path": -4.863098336456741,
+      "ev_myopic": -0.7318580595515096,
+      "ev_path": -4.862815845517955,
       "path_feasible": true,
       "implied_path": {
         "3": "TB",
@@ -432,7 +396,7 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 12,
+      "rank": 11,
       "pick_score": 75.1
     },
     {
@@ -445,10 +409,10 @@
       "future_value": 0.4537735222610245,
       "fv_penalty": 0.15882073279135858,
       "consensus_penalty": 0.0011,
-      "contrarian_bonus": 0.007763007084541886,
+      "contrarian_bonus": 0.00813443583722631,
       "rest_of_season_logwp": -4.271740305407235,
-      "ev_myopic": -0.6160460808655918,
-      "ev_path": -4.887786386272827,
+      "ev_myopic": -0.6156746521129074,
+      "ev_path": -4.887414957520143,
       "path_feasible": true,
       "implied_path": {
         "3": "BAL",
@@ -468,7 +432,7 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 13,
+      "rank": 12,
       "pick_score": 73.4
     },
     {
@@ -504,7 +468,7 @@
         "17": "SEA",
         "18": "NE"
       },
-      "rank": 14,
+      "rank": 13,
       "pick_score": 72.8
     },
     {
@@ -517,10 +481,10 @@
       "future_value": 0.0,
       "fv_penalty": 0.0,
       "consensus_penalty": 0.0016500000000000002,
-      "contrarian_bonus": 0.004967422721961237,
+      "contrarian_bonus": 0.005220748592668972,
       "rest_of_season_logwp": -4.130957785966445,
-      "ev_myopic": -0.8432513089417263,
-      "ev_path": -4.974209094908171,
+      "ev_myopic": -0.8429979830710186,
+      "ev_path": -4.973955769037463,
       "path_feasible": true,
       "implied_path": {
         "3": "TEN",
@@ -540,7 +504,7 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 15,
+      "rank": 14,
       "pick_score": 67.5
     },
     {
@@ -553,10 +517,10 @@
       "future_value": 0.0,
       "fv_penalty": 0.0,
       "consensus_penalty": 0.00055,
-      "contrarian_bonus": 0.005232182420419593,
+      "contrarian_bonus": 0.005479354659751776,
       "rest_of_season_logwp": -4.130957785966445,
-      "ev_myopic": -0.8664778168478,
-      "ev_path": -4.997435602814245,
+      "ev_myopic": -0.8662306446084678,
+      "ev_path": -4.997188430574913,
       "path_feasible": true,
       "implied_path": {
         "3": "CLE",
@@ -576,7 +540,7 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 16,
+      "rank": 15,
       "pick_score": 66.0
     },
     {
@@ -589,10 +553,10 @@
       "future_value": 0.21471460599286785,
       "fv_penalty": 0.07515011209750375,
       "consensus_penalty": 0.00385,
-      "contrarian_bonus": 0.0053727919714364305,
+      "contrarian_bonus": 0.005680963904657641,
       "rest_of_season_logwp": -4.300703954838113,
-      "ev_myopic": -0.7242148862672168,
-      "ev_path": -5.02491884110533,
+      "ev_myopic": -0.7239067143339956,
+      "ev_path": -5.024610669172109,
       "path_feasible": true,
       "implied_path": {
         "3": "MIN",
@@ -612,7 +576,7 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 17,
+      "rank": 16,
       "pick_score": 64.1
     },
     {
@@ -625,10 +589,10 @@
       "future_value": 0.4472293953277271,
       "fv_penalty": 0.15653028836470448,
       "consensus_penalty": 0.0011,
-      "contrarian_bonus": 0.007013761889958586,
+      "contrarian_bonus": 0.007351098891258172,
       "rest_of_season_logwp": -4.337463765291684,
-      "ev_myopic": -0.7107795100462571,
-      "ev_path": -5.048243275337941,
+      "ev_myopic": -0.7104421730449575,
+      "ev_path": -5.047905938336642,
       "path_feasible": true,
       "implied_path": {
         "3": "LA",
@@ -648,7 +612,7 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 18,
+      "rank": 17,
       "pick_score": 62.5
     },
     {
@@ -661,10 +625,10 @@
       "future_value": 0.0,
       "fv_penalty": 0.0,
       "consensus_penalty": 0.0011,
-      "contrarian_bonus": 0.004573633950927135,
+      "contrarian_bonus": 0.004799941564723043,
       "rest_of_season_logwp": -4.130957785966445,
-      "ev_myopic": -0.955876587383675,
-      "ev_path": -5.08683437335012,
+      "ev_myopic": -0.955650279769879,
+      "ev_path": -5.086608065736324,
       "path_feasible": true,
       "implied_path": {
         "3": "LV",
@@ -684,7 +648,7 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 19,
+      "rank": 18,
       "pick_score": 59.9
     },
     {
@@ -697,10 +661,10 @@
       "future_value": 0.027377508624917408,
       "fv_penalty": 0.009582128018721093,
       "consensus_penalty": 0.0,
-      "contrarian_bonus": 0.004744226260184939,
+      "contrarian_bonus": 0.004960095488769845,
       "rest_of_season_logwp": -4.130957785966444,
-      "ev_myopic": -1.0114105187444802,
-      "ev_path": -5.142368304710924,
+      "ev_myopic": -1.0111946495158952,
+      "ev_path": -5.14215243548234,
       "path_feasible": true,
       "implied_path": {
         "3": "PIT",
@@ -720,7 +684,7 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 20,
+      "rank": 19,
       "pick_score": 56.1
     },
     {
@@ -733,10 +697,10 @@
       "future_value": 0.10434004262556645,
       "fv_penalty": 0.03651901491894825,
       "consensus_penalty": 0.0011,
-      "contrarian_bonus": 0.0050542792487058095,
+      "contrarian_bonus": 0.005302456926019808,
       "rest_of_season_logwp": -4.25761608778821,
-      "ev_myopic": -0.8996652233536258,
-      "ev_path": -5.157281311141836,
+      "ev_myopic": -0.8994170456763118,
+      "ev_path": -5.157033133464521,
       "path_feasible": true,
       "implied_path": {
         "3": "IND",
@@ -756,44 +720,8 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 21,
+      "rank": 20,
       "pick_score": 55.1
-    },
-    {
-      "team": "DEN",
-      "team_name": "Denver Broncos",
-      "win_prob": 0.42888402625820565,
-      "pub_pick_pct": 0.0,
-      "exp_pool_share": 0.0,
-      "exp_pool_opponents": 0.0,
-      "future_value": 0.1541797091052367,
-      "fv_penalty": 0.05396289818683284,
-      "consensus_penalty": 0.0,
-      "contrarian_bonus": 0.005567422721961237,
-      "rest_of_season_logwp": -4.264027368326009,
-      "ev_myopic": -0.8949642071285592,
-      "ev_path": -5.158991575454568,
-      "path_feasible": true,
-      "implied_path": {
-        "3": "DEN",
-        "4": "MIN",
-        "5": "DET",
-        "6": "LA",
-        "7": "HOU",
-        "8": "DAL",
-        "9": "SEA",
-        "10": "IND",
-        "11": "KC",
-        "12": "CIN",
-        "13": "PHI",
-        "14": "CHI",
-        "15": "GB",
-        "16": "BAL",
-        "17": "BUF",
-        "18": "NE"
-      },
-      "rank": 22,
-      "pick_score": 55.0
     },
     {
       "team": "NE",
@@ -805,10 +733,10 @@
       "future_value": 0.2351756883657984,
       "fv_penalty": 0.08231149092802945,
       "consensus_penalty": 0.00055,
-      "contrarian_bonus": 0.0050822308212026285,
+      "contrarian_bonus": 0.005322580043614287,
       "rest_of_season_logwp": -4.244960879816102,
-      "ev_myopic": -0.9769317191149014,
-      "ev_path": -5.221892598931002,
+      "ev_myopic": -0.9766913698924897,
+      "ev_path": -5.22165224970859,
       "path_feasible": true,
       "implied_path": {
         "3": "NE",
@@ -828,7 +756,7 @@
         "17": "BUF",
         "18": "SF"
       },
-      "rank": 23,
+      "rank": 21,
       "pick_score": 50.7
     },
     {
@@ -841,10 +769,10 @@
       "future_value": 0.11491075774333138,
       "fv_penalty": 0.040218765210165985,
       "consensus_penalty": 0.00055,
-      "contrarian_bonus": 0.004618177527377939,
+      "contrarian_bonus": 0.004837411646700835,
       "rest_of_season_logwp": -4.226364123955793,
-      "ev_myopic": -1.0272558089858395,
-      "ev_path": -5.253619932941632,
+      "ev_myopic": -1.0270365748665164,
+      "ev_path": -5.253400698822309,
       "path_feasible": true,
       "implied_path": {
         "3": "DAL",
@@ -864,7 +792,7 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 24,
+      "rank": 22,
       "pick_score": 48.6
     },
     {
@@ -877,10 +805,10 @@
       "future_value": 0.027491162114103573,
       "fv_penalty": 0.00962190673993625,
       "consensus_penalty": 0.0,
-      "contrarian_bonus": 0.0042769478054448294,
+      "contrarian_bonus": 0.004471555181405708,
       "rest_of_season_logwp": -4.146931401782633,
-      "ev_myopic": -1.1156063048198,
-      "ev_path": -5.2625377066024335,
+      "ev_myopic": -1.115411697443839,
+      "ev_path": -5.262343099226473,
       "path_feasible": true,
       "implied_path": {
         "3": "CHI",
@@ -900,8 +828,44 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 25,
-      "pick_score": 48.0
+      "rank": 23,
+      "pick_score": 47.9
+    },
+    {
+      "team": "DEN",
+      "team_name": "Denver Broncos",
+      "win_prob": 0.42888402625820565,
+      "pub_pick_pct": 0.0,
+      "exp_pool_share": 0.0,
+      "exp_pool_opponents": 0.0,
+      "future_value": 0.1541797091052367,
+      "fv_penalty": 0.05396289818683284,
+      "consensus_penalty": 0.0,
+      "contrarian_bonus": 0.005820748592668972,
+      "rest_of_season_logwp": -4.394473810641454,
+      "ev_myopic": -0.8947108812578514,
+      "ev_path": -5.2891846918993055,
+      "path_feasible": true,
+      "implied_path": {
+        "3": "DEN",
+        "4": "MIN",
+        "5": "DET",
+        "6": "LA",
+        "7": "HOU",
+        "8": "DAL",
+        "9": "SEA",
+        "10": "IND",
+        "11": "KC",
+        "12": "CIN",
+        "13": "SF",
+        "14": "CHI",
+        "15": "GB",
+        "16": "BAL",
+        "17": "BUF",
+        "18": "NE"
+      },
+      "rank": 24,
+      "pick_score": 46.1
     },
     {
       "team": "ATL",
@@ -913,10 +877,10 @@
       "future_value": 0.0,
       "fv_penalty": 0.0,
       "consensus_penalty": 0.00055,
-      "contrarian_bonus": 0.0036752931308781144,
+      "contrarian_bonus": 0.0038516246321228364,
       "rest_of_season_logwp": -4.130957785966444,
-      "ev_myopic": -1.205754371758859,
-      "ev_path": -5.336712157725303,
+      "ev_myopic": -1.2055780402576144,
+      "ev_path": -5.3365358262240585,
       "path_feasible": true,
       "implied_path": {
         "3": "ATL",
@@ -936,7 +900,7 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 26,
+      "rank": 25,
       "pick_score": 42.9
     },
     {
@@ -949,10 +913,10 @@
       "future_value": 0.0,
       "fv_penalty": 0.0,
       "consensus_penalty": 0.0,
-      "contrarian_bonus": 0.0036184486723121467,
+      "contrarian_bonus": 0.0037830933753107026,
       "rest_of_season_logwp": -4.130957785966445,
-      "ev_myopic": -1.2738371324134272,
-      "ev_path": -5.4047949183798725,
+      "ev_myopic": -1.2736724877104286,
+      "ev_path": -5.404630273676874,
       "path_feasible": true,
       "implied_path": {
         "3": "NYJ",
@@ -972,7 +936,7 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 27,
+      "rank": 26,
       "pick_score": 38.3
     },
     {
@@ -985,10 +949,10 @@
       "future_value": 0.0,
       "fv_penalty": 0.0,
       "consensus_penalty": 0.0,
-      "contrarian_bonus": 0.0034682554306656025,
+      "contrarian_bonus": 0.0036260661216599246,
       "rest_of_season_logwp": -4.130957785966446,
-      "ev_myopic": -1.3163810062810721,
-      "ev_path": -5.447338792247518,
+      "ev_myopic": -1.3162231955900778,
+      "ev_path": -5.4471809815565235,
       "path_feasible": true,
       "implied_path": {
         "3": "WAS",
@@ -1008,7 +972,7 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 28,
+      "rank": 27,
       "pick_score": 35.4
     },
     {
@@ -1021,10 +985,10 @@
       "future_value": 0.06986248756464099,
       "fv_penalty": 0.024451870647624344,
       "consensus_penalty": 0.0,
-      "contrarian_bonus": 0.0033026282958689168,
+      "contrarian_bonus": 0.003452902710163844,
       "rest_of_season_logwp": -4.130957785966445,
-      "ev_myopic": -1.3899316090985327,
-      "ev_path": -5.520889395064978,
+      "ev_myopic": -1.389781334684238,
+      "ev_path": -5.520739120650683,
       "path_feasible": true,
       "implied_path": {
         "3": "LAC",
@@ -1044,7 +1008,7 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 29,
+      "rank": 28,
       "pick_score": 30.4
     },
     {
@@ -1057,10 +1021,10 @@
       "future_value": 0.0,
       "fv_penalty": 0.0,
       "consensus_penalty": 0.0,
-      "contrarian_bonus": 0.0029444957089837707,
+      "contrarian_bonus": 0.0030784745671601325,
       "rest_of_season_logwp": -4.130957785966445,
-      "ev_myopic": -1.4806189097005649,
-      "ev_path": -5.611576695667011,
+      "ev_myopic": -1.4804849308423884,
+      "ev_path": -5.611442716808834,
       "path_feasible": true,
       "implied_path": {
         "3": "ARI",
@@ -1080,7 +1044,7 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 30,
+      "rank": 29,
       "pick_score": 24.2
     },
     {
@@ -1093,10 +1057,10 @@
       "future_value": 0.0,
       "fv_penalty": 0.0,
       "consensus_penalty": 0.0,
-      "contrarian_bonus": 0.0020625516761739546,
+      "contrarian_bonus": 0.0021564007918851475,
       "rest_of_season_logwp": -4.130957785966445,
-      "ev_myopic": -1.8374945258085613,
-      "ev_path": -5.968452311775007,
+      "ev_myopic": -1.8374006766928501,
+      "ev_path": -5.968358462659295,
       "path_feasible": true,
       "implied_path": {
         "3": "MIA",
@@ -1116,7 +1080,7 @@
         "17": "BUF",
         "18": "NE"
       },
-      "rank": 31,
+      "rank": 30,
       "pick_score": 0.0
     }
   ],
@@ -1124,16 +1088,16 @@
     "team": "SF",
     "team_name": "San Francisco 49ers",
     "win_prob": 0.773172033446006,
-    "pub_pick_pct": 0.08199999999999999,
-    "exp_pool_share": 0.08199999999999999,
-    "exp_pool_opponents": 1122.0059999999999,
+    "pub_pick_pct": 0.081,
+    "exp_pool_share": 0.081,
+    "exp_pool_opponents": 1108.323,
     "future_value": 0.18004217331889516,
     "fv_penalty": 0.06301476066161331,
-    "consensus_penalty": 0.0451,
+    "consensus_penalty": 0.044550000000000006,
     "contrarian_bonus": 0.0,
     "rest_of_season_logwp": -4.130957785966445,
-    "ev_myopic": -0.36536846284731334,
-    "ev_path": -4.496326248813759,
+    "ev_myopic": -0.3648184628473134,
+    "ev_path": -4.495776248813759,
     "path_feasible": true,
     "implied_path": {
       "3": "SF",
@@ -1176,6 +1140,7 @@
   },
   "base_path_survival": 0.012422927916974693,
   "used_teams": [
-    "JAX"
+    "JAX",
+    "PHI"
   ]
 }

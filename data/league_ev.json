@@ -1,21 +1,21 @@
 {
   "week": 3,
-  "generated_at": "2026-09-23T14:12:49.287214+00:00",
+  "generated_at": "2026-09-23T14:37:35.298205+00:00",
   "teams": [
     {
       "team": "SF",
       "team_name": "San Francisco 49ers",
       "win_prob": 0.773172033446006,
-      "pub_pick_pct": 0.08199999999999999,
-      "exp_pool_share": 0.08199999999999999,
-      "exp_pool_opponents": 1122.0059999999999,
+      "pub_pick_pct": 0.081,
+      "exp_pool_share": 0.081,
+      "exp_pool_opponents": 1108.323,
       "future_value": 0.18004217331889516,
       "fv_penalty": 0.06301476066161331,
-      "consensus_penalty": 0.0451,
+      "consensus_penalty": 0.044550000000000006,
       "contrarian_bonus": 0.0,
       "rest_of_season_logwp": -3.997418470957281,
-      "ev_myopic": -0.36536846284731334,
-      "ev_path": -4.362786933804594,
+      "ev_myopic": -0.3648184628473134,
+      "ev_path": -4.362236933804595,
       "path_feasible": true,
       "implied_path": {
         "3": "SF",
@@ -72,7 +72,7 @@
         "18": "NE"
       },
       "rank": 2,
-      "pick_score": 94.0
+      "pick_score": 93.9
     },
     {
       "team": "NO",
@@ -114,16 +114,16 @@
       "team": "DET",
       "team_name": "Detroit Lions",
       "win_prob": 0.7212543554006969,
-      "pub_pick_pct": 0.09,
-      "exp_pool_share": 0.09,
-      "exp_pool_opponents": 1231.47,
-      "future_value": 0.1899011027529362,
-      "fv_penalty": 0.06646538596352766,
-      "consensus_penalty": 0.0495,
+      "pub_pick_pct": 0.08900000000000001,
+      "exp_pool_share": 0.08900000000000001,
+      "exp_pool_opponents": 1217.787,
+      "future_value": 0.19678541538136002,
+      "fv_penalty": 0.068874895383476,
+      "consensus_penalty": 0.04895000000000001,
       "contrarian_bonus": 0.0,
       "rest_of_season_logwp": -4.0524567437059575,
-      "ev_myopic": -0.4427288084577796,
-      "ev_path": -4.495185552163737,
+      "ev_myopic": -0.44458831787772796,
+      "ev_path": -4.497045061583685,
       "path_feasible": true,
       "implied_path": {
         "3": "DET",
@@ -144,7 +144,7 @@
         "18": "NE"
       },
       "rank": 4,
-      "pick_score": 91.0
+      "pick_score": 90.8
     },
     {
       "team": "SEA",
@@ -222,16 +222,16 @@
       "team": "NYG",
       "team_name": "New York Giants",
       "win_prob": 0.5711159737417943,
-      "pub_pick_pct": 0.019,
-      "exp_pool_share": 0.019,
-      "exp_pool_opponents": 259.977,
+      "pub_pick_pct": 0.018000000000000002,
+      "exp_pool_share": 0.018000000000000002,
+      "exp_pool_opponents": 246.29400000000004,
       "future_value": 0.0,
       "fv_penalty": 0.0,
-      "consensus_penalty": 0.010450000000000001,
-      "contrarian_bonus": 0.0033389496717724297,
+      "consensus_penalty": 0.009900000000000003,
+      "contrarian_bonus": 0.003538949671772429,
       "rest_of_season_logwp": -3.997418470957281,
-      "ev_myopic": -0.5672740338997387,
-      "ev_path": -4.564692504857019,
+      "ev_myopic": -0.5665240338997388,
+      "ev_path": -4.56394250485702,
       "path_feasible": true,
       "implied_path": {
         "3": "NYG",
@@ -258,16 +258,16 @@
       "team": "KC",
       "team_name": "Kansas City Chiefs",
       "win_prob": 0.8411122144985105,
-      "pub_pick_pct": 0.397,
-      "exp_pool_share": 0.397,
-      "exp_pool_opponents": 5432.151,
+      "pub_pick_pct": 0.396,
+      "exp_pool_share": 0.396,
+      "exp_pool_opponents": 5418.468,
       "future_value": 0.2688658884317225,
       "fv_penalty": 0.09410306095110287,
-      "consensus_penalty": 0.21835000000000002,
+      "consensus_penalty": 0.21780000000000002,
       "contrarian_bonus": 0.0,
       "rest_of_season_logwp": -4.111421564806937,
-      "ev_myopic": -0.48548325901761075,
-      "ev_path": -4.596904823824548,
+      "ev_myopic": -0.48493325901761075,
+      "ev_path": -4.596354823824548,
       "path_feasible": true,
       "implied_path": {
         "3": "KC",
@@ -402,16 +402,16 @@
       "team": "GB",
       "team_name": "Green Bay Packers",
       "win_prob": 0.701468452477005,
-      "pub_pick_pct": 0.132,
-      "exp_pool_share": 0.132,
-      "exp_pool_opponents": 1806.1560000000002,
+      "pub_pick_pct": 0.134,
+      "exp_pool_share": 0.134,
+      "exp_pool_opponents": 1833.5220000000002,
       "future_value": 0.10175913362590341,
       "fv_penalty": 0.035615696769066195,
-      "consensus_penalty": 0.07260000000000001,
+      "consensus_penalty": 0.07370000000000002,
       "contrarian_bonus": 0.0,
       "rest_of_season_logwp": -4.250902593266738,
-      "ev_myopic": -0.46279504874238164,
-      "ev_path": -4.71369764200912,
+      "ev_myopic": -0.46389504874238163,
+      "ev_path": -4.7147976420091195,
       "path_feasible": true,
       "implied_path": {
         "3": "GB",
@@ -432,7 +432,7 @@
         "18": "NE"
       },
       "rank": 12,
-      "pick_score": 76.2
+      "pick_score": 76.1
     },
     {
       "team": "TB",
@@ -468,7 +468,7 @@
         "18": "NE"
       },
       "rank": 13,
-      "pick_score": 75.1
+      "pick_score": 75.0
     },
     {
       "team": "BAL",
