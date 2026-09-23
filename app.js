@@ -256,9 +256,16 @@ async function loadSharedCharts() {
     charts,
   );
 
-  const total = (manifest.shared || []).find(c => c.key === "teams_remaining")?.total_entries;
+  const remainingChart = (manifest.shared || []).find(c => c.key === "teams_remaining");
+  const total = remainingChart?.total_entries;
+  const alive = remainingChart?.alive_entries;
   const poolSize = document.getElementById("pool-size");
-  poolSize.textContent = total ? `${total.toLocaleString()} pool entries tracked` : "";
+  if (total && alive != null) {
+    const pct = ((alive / total) * 100).toFixed(1);
+    poolSize.textContent = `${alive.toLocaleString()} / ${total.toLocaleString()} left (${pct}%)`;
+  } else {
+    poolSize.textContent = total ? `${total.toLocaleString()} pool entries tracked` : "";
+  }
 }
 
 // ---------------------------------------------------------------------
