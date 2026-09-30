@@ -1,22 +1,22 @@
 {
   "member": "Big Dave",
   "week": 4,
-  "generated_at": "2026-09-30T01:19:14.502948+00:00",
+  "generated_at": "2026-09-30T01:30:21.404195+00:00",
   "teams": [
     {
       "team": "MIN",
       "team_name": "Minnesota Vikings",
       "win_prob": 0.8258608849210243,
-      "pub_pick_pct": 0.342,
-      "exp_pool_share": 0.342,
-      "exp_pool_opponents": 4679.928000000001,
+      "pub_pick_pct": 0.34600000000000003,
+      "exp_pool_share": 0.34600000000000003,
+      "exp_pool_opponents": 4734.664000000001,
       "future_value": 0.0,
       "fv_penalty": 0.0,
-      "consensus_penalty": 0.18810000000000002,
+      "consensus_penalty": 0.19030000000000002,
       "contrarian_bonus": 0.0,
       "rest_of_season_logwp": -3.8709918611753906,
-      "ev_myopic": -0.37942893983789683,
-      "ev_path": -4.250420801013288,
+      "ev_myopic": -0.3816289398378968,
+      "ev_path": -4.252620801013287,
       "path_feasible": true,
       "implied_path": {
         "4": "MIN",
@@ -71,7 +71,7 @@
         "18": "NE"
       },
       "rank": 2,
-      "pick_score": 92.7
+      "pick_score": 92.9
     },
     {
       "team": "NO",
@@ -106,7 +106,7 @@
         "18": "NE"
       },
       "rank": 3,
-      "pick_score": 90.4
+      "pick_score": 90.6
     },
     {
       "team": "PIT",
@@ -141,22 +141,22 @@
         "18": "NE"
       },
       "rank": 4,
-      "pick_score": 88.7
+      "pick_score": 88.8
     },
     {
       "team": "SF",
       "team_name": "San Francisco 49ers",
       "win_prob": 0.5711159737417943,
-      "pub_pick_pct": 0.004,
-      "exp_pool_share": 0.004,
-      "exp_pool_opponents": 54.736000000000004,
+      "pub_pick_pct": 0.003,
+      "exp_pool_share": 0.003,
+      "exp_pool_opponents": 41.052,
       "future_value": 0.1308395065713177,
       "fv_penalty": 0.0457938272999612,
-      "consensus_penalty": 0.0022,
-      "contrarian_bonus": 0.00706286058358227,
+      "consensus_penalty": 0.0016500000000000002,
+      "contrarian_bonus": 0.0072628605835822705,
       "rest_of_season_logwp": -3.8291602704865753,
-      "ev_myopic": -0.60109395028789,
-      "ev_path": -4.430254220774466,
+      "ev_myopic": -0.6003439502878901,
+      "ev_path": -4.429504220774466,
       "path_feasible": true,
       "implied_path": {
         "4": "SF",
@@ -176,22 +176,22 @@
         "18": "NE"
       },
       "rank": 5,
-      "pick_score": 86.8
+      "pick_score": 87.0
     },
     {
       "team": "CHI",
       "team_name": "Chicago Bears",
       "win_prob": 0.6168582375478927,
-      "pub_pick_pct": 0.043,
-      "exp_pool_share": 0.043,
-      "exp_pool_opponents": 588.4119999999999,
+      "pub_pick_pct": 0.044000000000000004,
+      "exp_pool_share": 0.044000000000000004,
+      "exp_pool_opponents": 602.096,
       "future_value": 0.03736464645926893,
       "fv_penalty": 0.013077626260744124,
-      "consensus_penalty": 0.02365,
+      "consensus_penalty": 0.024200000000000003,
       "contrarian_bonus": 0.0,
       "rest_of_season_logwp": -3.914194089619876,
-      "ev_myopic": -0.5198436685989746,
-      "ev_path": -4.43403775821885,
+      "ev_myopic": -0.5203936685989746,
+      "ev_path": -4.434587758218851,
       "path_feasible": true,
       "implied_path": {
         "4": "CHI",
@@ -211,7 +211,7 @@
         "18": "NE"
       },
       "rank": 6,
-      "pick_score": 86.6
+      "pick_score": 86.7
     },
     {
       "team": "KC",
@@ -246,22 +246,22 @@
         "18": "NE"
       },
       "rank": 7,
-      "pick_score": 85.3
+      "pick_score": 85.4
     },
     {
       "team": "ARI",
       "team_name": "Arizona Cardinals",
       "win_prob": 0.5324675324675325,
-      "pub_pick_pct": 0.004,
-      "exp_pool_share": 0.004,
-      "exp_pool_opponents": 54.736000000000004,
+      "pub_pick_pct": 0.005,
+      "exp_pool_share": 0.005,
+      "exp_pool_opponents": 68.42,
       "future_value": 0.0,
       "fv_penalty": 0.0,
-      "consensus_penalty": 0.0022,
-      "contrarian_bonus": 0.006530766719141218,
+      "consensus_penalty": 0.0027500000000000003,
+      "contrarian_bonus": 0.006330766719141218,
       "rest_of_season_logwp": -3.8291602704865753,
-      "ev_myopic": -0.6259025884302347,
-      "ev_path": -4.45506285891681,
+      "ev_myopic": -0.6266525884302347,
+      "ev_path": -4.4558128589168104,
       "path_feasible": true,
       "implied_path": {
         "4": "ARI",
@@ -281,22 +281,22 @@
         "18": "NE"
       },
       "rank": 8,
-      "pick_score": 85.0
+      "pick_score": 85.1
     },
     {
       "team": "BAL",
       "team_name": "Baltimore Ravens",
       "win_prob": 0.8331108144192256,
-      "pub_pick_pct": 0.401,
-      "exp_pool_share": 0.401,
-      "exp_pool_opponents": 5487.284000000001,
-      "future_value": 0.30986532264034705,
-      "fv_penalty": 0.10845286292412146,
-      "consensus_penalty": 0.22055000000000002,
+      "pub_pick_pct": 0.402,
+      "exp_pool_share": 0.402,
+      "exp_pool_opponents": 5500.968000000001,
+      "future_value": 0.31021054512321594,
+      "fv_penalty": 0.10857369079312558,
+      "consensus_penalty": 0.22110000000000002,
       "contrarian_bonus": 0.0,
       "rest_of_season_logwp": -3.956853966449773,
-      "ev_myopic": -0.5115914780719133,
-      "ev_path": -4.468445444521686,
+      "ev_myopic": -0.5122623059409175,
+      "ev_path": -4.46911627239069,
       "path_feasible": true,
       "implied_path": {
         "4": "BAL",
@@ -316,7 +316,7 @@
         "18": "NE"
       },
       "rank": 9,
-      "pick_score": 84.0
+      "pick_score": 84.1
     },
     {
       "team": "IND",
@@ -351,7 +351,7 @@
         "18": "NE"
       },
       "rank": 10,
-      "pick_score": 83.1
+      "pick_score": 83.3
     },
     {
       "team": "HOU",
@@ -386,22 +386,22 @@
         "18": "NE"
       },
       "rank": 11,
-      "pick_score": 76.9
+      "pick_score": 77.0
     },
     {
       "team": "NYG",
       "team_name": "New York Giants",
       "win_prob": 0.4675324675324675,
-      "pub_pick_pct": 0.011000000000000001,
-      "exp_pool_share": 0.011000000000000001,
-      "exp_pool_opponents": 150.524,
+      "pub_pick_pct": 0.008,
+      "exp_pool_share": 0.008,
+      "exp_pool_opponents": 109.47200000000001,
       "future_value": 0.0,
       "fv_penalty": 0.0,
-      "consensus_penalty": 0.006050000000000001,
-      "contrarian_bonus": 0.004236770777782529,
+      "consensus_penalty": 0.0044,
+      "contrarian_bonus": 0.00483677077778253,
       "rest_of_season_logwp": -3.8291602704865757,
-      "ev_myopic": -0.7620997126197914,
-      "ev_path": -4.591259983106367,
+      "ev_myopic": -0.7598497126197913,
+      "ev_path": -4.589009983106368,
       "path_feasible": true,
       "implied_path": {
         "4": "NYG",
@@ -421,7 +421,7 @@
         "18": "NE"
       },
       "rank": 12,
-      "pick_score": 75.1
+      "pick_score": 75.4
     },
     {
       "team": "GB",
@@ -456,7 +456,7 @@
         "18": "NE"
       },
       "rank": 13,
-      "pick_score": 74.6
+      "pick_score": 74.7
     },
     {
       "team": "BUF",
@@ -491,7 +491,7 @@
         "18": "NE"
       },
       "rank": 14,
-      "pick_score": 74.6
+      "pick_score": 74.7
     },
     {
       "team": "CIN",
@@ -526,7 +526,7 @@
         "18": "NE"
       },
       "rank": 15,
-      "pick_score": 71.5
+      "pick_score": 71.6
     },
     {
       "team": "CLE",
@@ -561,7 +561,7 @@
         "18": "NE"
       },
       "rank": 16,
-      "pick_score": 68.9
+      "pick_score": 69.0
     },
     {
       "team": "ATL",
@@ -596,7 +596,7 @@
         "18": "NE"
       },
       "rank": 17,
-      "pick_score": 68.3
+      "pick_score": 68.4
     },
     {
       "team": "LA",
@@ -631,7 +631,7 @@
         "18": "NE"
       },
       "rank": 18,
-      "pick_score": 66.6
+      "pick_score": 66.8
     },
     {
       "team": "NYJ",
@@ -666,7 +666,7 @@
         "18": "NE"
       },
       "rank": 19,
-      "pick_score": 60.9
+      "pick_score": 61.0
     },
     {
       "team": "CAR",
@@ -701,7 +701,7 @@
         "18": "NE"
       },
       "rank": 20,
-      "pick_score": 57.5
+      "pick_score": 57.6
     },
     {
       "team": "TB",
@@ -736,7 +736,7 @@
         "18": "NE"
       },
       "rank": 21,
-      "pick_score": 57.5
+      "pick_score": 57.6
     },
     {
       "team": "WAS",
@@ -771,7 +771,7 @@
         "18": "NE"
       },
       "rank": 22,
-      "pick_score": 57.4
+      "pick_score": 57.5
     },
     {
       "team": "LV",
@@ -806,22 +806,22 @@
         "18": "NE"
       },
       "rank": 23,
-      "pick_score": 54.2
+      "pick_score": 54.3
     },
     {
       "team": "DAL",
       "team_name": "Dallas Cowboys",
       "win_prob": 0.42888402625820565,
-      "pub_pick_pct": 0.008,
-      "exp_pool_share": 0.008,
-      "exp_pool_opponents": 109.47200000000001,
+      "pub_pick_pct": 0.005,
+      "exp_pool_share": 0.005,
+      "exp_pool_opponents": 68.42,
       "future_value": 0.35265705152740867,
       "fv_penalty": 0.12342996803459302,
-      "consensus_penalty": 0.0044,
-      "contrarian_bonus": 0.004304676913341475,
+      "consensus_penalty": 0.0027500000000000003,
+      "contrarian_bonus": 0.0049046769133414755,
       "rest_of_season_logwp": -3.9733480321727974,
-      "ev_myopic": -0.9700940227849391,
-      "ev_path": -4.943442054957736,
+      "ev_myopic": -0.9678440227849391,
+      "ev_path": -4.941192054957736,
       "path_feasible": true,
       "implied_path": {
         "4": "DAL",
@@ -841,7 +841,7 @@
         "18": "NE"
       },
       "rank": 24,
-      "pick_score": 49.3
+      "pick_score": 49.5
     },
     {
       "team": "DEN",
@@ -850,13 +850,13 @@
       "pub_pick_pct": 0.001,
       "exp_pool_share": 0.001,
       "exp_pool_opponents": 13.684000000000001,
-      "future_value": 0.19500982956994686,
-      "fv_penalty": 0.0682534403494814,
+      "future_value": 0.20225913821143698,
+      "fv_penalty": 0.07079069837400294,
       "consensus_penalty": 0.00055,
       "contrarian_bonus": 0.005704676913341475,
       "rest_of_season_logwp": -4.1194557207527165,
-      "ev_myopic": -0.9096674950998276,
-      "ev_path": -5.029123215852544,
+      "ev_myopic": -0.9122047531243491,
+      "ev_path": -5.031660473877065,
       "path_feasible": true,
       "implied_path": {
         "4": "DEN",
@@ -876,7 +876,7 @@
         "18": "NE"
       },
       "rank": 25,
-      "pick_score": 43.0
+      "pick_score": 42.9
     },
     {
       "team": "LAC",
@@ -1023,16 +1023,16 @@
     "team": "MIN",
     "team_name": "Minnesota Vikings",
     "win_prob": 0.8258608849210243,
-    "pub_pick_pct": 0.342,
-    "exp_pool_share": 0.342,
-    "exp_pool_opponents": 4679.928000000001,
+    "pub_pick_pct": 0.34600000000000003,
+    "exp_pool_share": 0.34600000000000003,
+    "exp_pool_opponents": 4734.664000000001,
     "future_value": 0.0,
     "fv_penalty": 0.0,
-    "consensus_penalty": 0.18810000000000002,
+    "consensus_penalty": 0.19030000000000002,
     "contrarian_bonus": 0.0,
     "rest_of_season_logwp": -3.8709918611753906,
-    "ev_myopic": -0.37942893983789683,
-    "ev_path": -4.250420801013288,
+    "ev_myopic": -0.3816289398378968,
+    "ev_path": -4.252620801013287,
     "path_feasible": true,
     "implied_path": {
       "4": "MIN",
