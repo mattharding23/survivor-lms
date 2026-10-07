@@ -1,57 +1,56 @@
-# Survivor — Week 4 (2026) — Big Dave (Parlay)
+# Survivor — Week 5 (2026) — Big Dave (Parlay)
 
-- Win-prob sources: **odds-api:32**
+- Win-prob sources: **odds-api:30**
 - Public pick %: **survivorgrid** survivorgrid ok (https://www.survivorgrid.com/)
 - Opponents tracked: **0** (0 alive)
-- Teams already used by you: **DET, JAX, PHI**
+- Teams already used by you: **BAL, DET, JAX, PHI**
 
-## ✅ Recommended Week 4 pick: **MIN (Minnesota Vikings)**
-- Market win probability: **82.6%**
-- Public pick %: 34.6%  |  expected dupes in your pool: 4734.66 (34.6% of those alive)
-- EV(path) = -4.2526   EV(myopic) = -0.3816
-- Implied season plan if you take MIN now:
-  `W4:MIN  W5:DAL  W6:LA  W7:HOU  W8:PIT  W9:SEA  W10:IND  W11:KC  W12:CIN  W13:DEN  W14:CHI  W15:GB  W16:BAL  W17:BUF  W18:NE`
+## ✅ Recommended Week 5 pick: **ATL (Atlanta Falcons)**
+- Market win probability: **63.3%**
+- Public pick %: 0.3%  |  expected dupes in your pool: 41.05 (0.3% of those alive)
+- EV(path) = -4.1440   EV(myopic) = -0.4501
+- Implied season plan if you take ATL now:
+  `W5:ATL  W6:SF  W7:HOU  W8:CIN  W9:KC  W10:LA  W11:BUF  W12:IND  W13:DEN  W14:SEA  W15:GB  W16:MIN  W17:DAL  W18:NE`
+
+> ℹ️ The pure win-probability path optimiser would open with **DAL** this week; **ATL** ranks #1 once the future-value guard and consensus penalty are applied. Both are shown below — adjust `future_value_penalty` / `consensus_penalty` in config.py to taste.
 
 ## Unconditional optimal season plan (pure Π win-prob)
-`W4:MIN  W5:DAL  W6:LA  W7:HOU  W8:PIT  W9:SEA  W10:IND  W11:KC  W12:CIN  W13:DEN  W14:CHI  W15:GB  W16:BAL  W17:BUF  W18:NE`
-- Expected weeks survived (Π win-prob): **0.017**  (sum log wp = -4.062)
+`W5:DAL  W6:SF  W7:HOU  W8:CIN  W9:SEA  W10:LA  W11:KC  W12:IND  W13:DEN  W14:CHI  W15:GB  W16:MIN  W17:BUF  W18:NE`
+- Expected weeks survived (Π win-prob): **0.019**  (sum log wp = -3.974)
 
 ## Ranked available teams
 |   rank | team   |   pick_score |   win_% |   public_% |   pool_dupes |   pool_% |   future_val |   EV_path |   rest_logwp | implied_next_picks                    |
 |-------:|:-------|-------------:|--------:|-----------:|-------------:|---------:|-------------:|----------:|-------------:|:--------------------------------------|
-|      1 | MIN    |        100   |    82.6 |       34.6 |      4734.66 |     34.6 |        0     |   -4.2526 |       -3.871 | W4:MIN  W5:DAL  W6:LA  W7:HOU  W8:PIT |
-|      2 | SEA    |         92.9 |    73.8 |        3.6 |       492.62 |      3.6 |        0.221 |   -4.3497 |       -3.952 | W4:SEA  W5:CIN  W6:LA  W7:HOU  W8:DAL |
-|      3 | NO     |         90.6 |    57.6 |        1   |       136.84 |      1   |        0.005 |   -4.3814 |       -3.829 | W4:NO  W5:CIN  W6:LA  W7:HOU  W8:DAL  |
-|      4 | PIT    |         88.8 |    57.3 |        2.2 |       301.05 |      2.2 |        0.03  |   -4.4053 |       -3.829 | W4:PIT  W5:CIN  W6:LA  W7:HOU  W8:DAL |
-|      5 | SF     |         87   |    57.1 |        0.3 |        41.05 |      0.3 |        0.131 |   -4.4295 |       -3.829 | W4:SF  W5:CIN  W6:LA  W7:HOU  W8:DAL  |
-|      6 | CHI    |         86.7 |    61.7 |        4.4 |       602.1  |      4.4 |        0.037 |   -4.4346 |       -3.914 | W4:CHI  W5:CIN  W6:LA  W7:HOU  W8:DAL |
-|      7 | KC     |         85.4 |    65.1 |        1.2 |       164.21 |      1.2 |        0.225 |   -4.452  |       -3.943 | W4:KC  W5:CIN  W6:LA  W7:HOU  W8:DAL  |
-|      8 | ARI    |         85.1 |    53.2 |        0.5 |        68.42 |      0.5 |        0     |   -4.4558 |       -3.829 | W4:ARI  W5:CIN  W6:LA  W7:HOU  W8:DAL |
-|      9 | BAL    |         84.1 |    83.3 |       40.2 |      5500.97 |     40.2 |        0.31  |   -4.4691 |       -3.957 | W4:BAL  W5:CIN  W6:LA  W7:HOU  W8:DAL |
-|     10 | IND    |         83.3 |    63.5 |        0.5 |        68.42 |      0.5 |        0.101 |   -4.4809 |       -3.996 | W4:IND  W5:CIN  W6:SF  W7:HOU  W8:DAL |
-|     11 | HOU    |         77   |    57.1 |        0.2 |        27.37 |      0.2 |        0.218 |   -4.5661 |       -3.936 | W4:HOU  W5:CIN  W6:LA  W7:NYJ  W8:DAL |
-|     12 | NYG    |         75.4 |    46.8 |        0.8 |       109.47 |      0.8 |        0     |   -4.589  |       -3.829 | W4:NYG  W5:CIN  W6:LA  W7:HOU  W8:DAL |
-|     13 | GB     |         74.7 |    63.5 |        1.3 |       177.89 |      1.3 |        0.101 |   -4.5975 |       -4.106 | W4:GB  W5:CIN  W6:LA  W7:HOU  W8:DAL  |
-|     14 | BUF    |         74.7 |    71.8 |        5.4 |       738.94 |      5.4 |        0.373 |   -4.598  |       -4.106 | W4:BUF  W5:CIN  W6:LA  W7:HOU  W8:PIT |
-|     15 | CIN    |         71.6 |    56.2 |        0.2 |        27.37 |      0.2 |        0.32  |   -4.6399 |       -3.958 | W4:CIN  W5:DAL  W6:LA  W7:HOU  W8:PIT |
-|     16 | CLE    |         69   |    42.7 |        0.2 |        27.37 |      0.2 |        0     |   -4.6755 |       -3.829 | W4:CLE  W5:CIN  W6:LA  W7:HOU  W8:DAL |
-|     17 | ATL    |         68.4 |    42.4 |        0.2 |        27.37 |      0.2 |        0     |   -4.6838 |       -3.829 | W4:ATL  W5:CIN  W6:LA  W7:HOU  W8:DAL |
-|     18 | LA     |         66.8 |    59.9 |        0.3 |        41.05 |      0.3 |        0.445 |   -4.7063 |       -4.045 | W4:LA  W5:CIN  W6:SF  W7:HOU  W8:DAL  |
-|     19 | NYJ    |         61   |    38.3 |        0.2 |        27.37 |      0.2 |        0     |   -4.7847 |       -3.829 | W4:NYJ  W5:CIN  W6:LA  W7:HOU  W8:DAL |
-|     20 | CAR    |         57.6 |    36.5 |        0   |         0    |      0   |        0     |   -4.8307 |       -3.829 | W4:CAR  W5:CIN  W6:LA  W7:HOU  W8:DAL |
-|     21 | TB     |         57.6 |    36.5 |        0.1 |        13.68 |      0.1 |        0     |   -4.8315 |       -3.829 | W4:TB  W5:CIN  W6:LA  W7:HOU  W8:DAL  |
-|     22 | WAS    |         57.5 |    36.5 |        0.3 |        41.05 |      0.3 |        0     |   -4.833  |       -3.829 | W4:WAS  W5:CIN  W6:LA  W7:HOU  W8:DAL |
-|     23 | LV     |         54.3 |    34.9 |        0.1 |        13.68 |      0.1 |        0     |   -4.8766 |       -3.829 | W4:LV  W5:CIN  W6:LA  W7:HOU  W8:DAL  |
-|     24 | DAL    |         49.5 |    42.9 |        0.5 |        68.42 |      0.5 |        0.353 |   -4.9412 |       -3.973 | W4:DAL  W5:CIN  W6:LA  W7:HOU  W8:PIT |
-|     25 | DEN    |         42.9 |    42.9 |        0.1 |        13.68 |      0.1 |        0.202 |   -5.0317 |       -4.119 | W4:DEN  W5:CIN  W6:LA  W7:HOU  W8:DAL |
-|     26 | LAC    |         31.2 |    26.2 |        0   |         0    |      0   |        0.076 |   -5.1915 |       -3.829 | W4:LAC  W5:CIN  W6:LA  W7:HOU  W8:DAL |
-|     27 | NE     |         25.5 |    28.2 |        0.1 |        13.68 |      0.1 |        0.167 |   -5.2693 |       -3.948 | W4:NE  W5:CIN  W6:LA  W7:HOU  W8:DAL  |
-|     28 | MIA    |          3.1 |    17.4 |        0   |         0    |      0   |        0     |   -5.5747 |       -3.829 | W4:MIA  W5:CIN  W6:LA  W7:HOU  W8:DAL |
-|     29 | TEN    |          0   |    16.7 |        0   |         0    |      0   |        0     |   -5.6173 |       -3.829 | W4:TEN  W5:CIN  W6:LA  W7:HOU  W8:DAL |
+|      1 | ATL    |        100   |    63.3 |        0.3 |        41.05 |      0.3 |        0     |   -4.144  |       -3.694 | W5:ATL  W6:SF  W7:HOU  W8:CIN  W9:KC  |
+|      2 | WAS    |         99.5 |    62.9 |        0.1 |        13.68 |      0.1 |        0     |   -4.1488 |       -3.694 | W5:WAS  W6:SF  W7:HOU  W8:CIN  W9:KC  |
+|      3 | HOU    |         95.9 |    76.3 |       12.8 |      1751.55 |     12.8 |        0.142 |   -4.1882 |       -3.798 | W5:HOU  W6:SF  W7:LA  W8:DAL  W9:SEA  |
+|      4 | PIT    |         89.7 |    57.6 |        0.3 |        41.05 |      0.3 |        0.048 |   -4.255  |       -3.694 | W5:PIT  W6:SF  W7:HOU  W8:CIN  W9:KC  |
+|      5 | NYJ    |         86.1 |    54.5 |        0.1 |        13.68 |      0.1 |        0     |   -4.2937 |       -3.694 | W5:NYJ  W6:SF  W7:HOU  W8:CIN  W9:KC  |
+|      6 | DAL    |         85.3 |    78.3 |       45.4 |      6212.54 |     45.4 |        0.225 |   -4.3026 |       -3.73  | W5:DAL  W6:SF  W7:HOU  W8:CIN  W9:SEA |
+|      7 | CIN    |         85   |    73.5 |       26.7 |      3653.63 |     26.7 |        0.219 |   -4.3059 |       -3.775 | W5:CIN  W6:SF  W7:HOU  W8:DAL  W9:SEA |
+|      8 | MIN    |         83.1 |    54.7 |        1.4 |       191.58 |      1.4 |        0.011 |   -4.3257 |       -3.716 | W5:MIN  W6:SF  W7:HOU  W8:CIN  W9:KC  |
+|      9 | CHI    |         82.8 |    54.3 |        0.4 |        54.74 |      0.4 |        0.084 |   -4.3289 |       -3.694 | W5:CHI  W6:SF  W7:HOU  W8:CIN  W9:KC  |
+|     10 | NE     |         81   |    62.9 |        1.8 |       246.31 |      1.8 |        0.237 |   -4.3485 |       -3.798 | W5:NE  W6:SF  W7:HOU  W8:CIN  W9:SEA  |
+|     11 | SEA    |         77.2 |    61.1 |        0.1 |        13.68 |      0.1 |        0.277 |   -4.3894 |       -3.808 | W5:SEA  W6:SF  W7:HOU  W8:CIN  W9:KC  |
+|     12 | DEN    |         74.1 |    62.2 |        1.6 |       218.94 |      1.6 |        0.201 |   -4.4231 |       -3.876 | W5:DEN  W6:LA  W7:HOU  W8:DAL  W9:SEA |
+|     13 | LA     |         69.1 |    59.9 |        0.1 |        13.68 |      0.1 |        0.553 |   -4.4764 |       -3.779 | W5:LA  W6:SF  W7:HOU  W8:DAL  W9:SEA  |
+|     14 | NO     |         68.9 |    45.3 |        0.1 |        13.68 |      0.1 |        0     |   -4.4789 |       -3.694 | W5:NO  W6:SF  W7:HOU  W8:CIN  W9:KC   |
+|     15 | CLE    |         68   |    45.5 |        1.9 |       260    |      1.9 |        0     |   -4.488  |       -3.694 | W5:CLE  W6:SF  W7:HOU  W8:CIN  W9:KC  |
+|     16 | IND    |         55.1 |    42.4 |        0.1 |        13.68 |      0.1 |        0.175 |   -4.6276 |       -3.713 | W5:IND  W6:SF  W7:HOU  W8:DAL  W9:SEA |
+|     17 | LAC    |         51.1 |    37.8 |        0   |         0    |      0   |        0.022 |   -4.6699 |       -3.694 | W5:LAC  W6:SF  W7:HOU  W8:CIN  W9:KC  |
+|     18 | LV     |         50.2 |    37.1 |        0.1 |        13.68 |      0.1 |        0     |   -4.68   |       -3.694 | W5:LV  W6:SF  W7:HOU  W8:CIN  W9:KC   |
+|     19 | NYG    |         49.9 |    37.1 |        0.5 |        68.42 |      0.5 |        0     |   -4.683  |       -3.694 | W5:NYG  W6:SF  W7:HOU  W8:CIN  W9:KC  |
+|     20 | GB     |         46   |    45.7 |        0.1 |        13.68 |      0.1 |        0.057 |   -4.7257 |       -3.929 | W5:GB  W6:SF  W7:HOU  W8:DAL  W9:SEA  |
+|     21 | SF     |         44.8 |    38.9 |        0.1 |        13.68 |      0.1 |        0.259 |   -4.7383 |       -3.71  | W5:SF  W6:LA  W7:HOU  W8:DAL  W9:SEA  |
+|     22 | BUF    |         33.3 |    40.1 |        0.1 |        13.68 |      0.1 |        0.364 |   -4.8625 |       -3.826 | W5:BUF  W6:SF  W7:HOU  W8:CIN  W9:SEA |
+|     23 | ARI    |         33.2 |    30.9 |        0   |         0    |      0   |        0     |   -4.8628 |       -3.694 | W5:ARI  W6:SF  W7:HOU  W8:CIN  W9:KC  |
+|     24 | MIA    |         18.8 |    26.5 |        0   |         0    |      0   |        0     |   -5.0184 |       -3.694 | W5:MIA  W6:SF  W7:HOU  W8:CIN  W9:KC  |
+|     25 | TEN    |          8.3 |    23.7 |        0   |         0    |      0   |        0     |   -5.1308 |       -3.694 | W5:TEN  W6:SF  W7:HOU  W8:CIN  W9:KC  |
+|     26 | TB     |          0   |    21.7 |        0   |         0    |      0   |        0     |   -5.2205 |       -3.694 | W5:TB  W6:SF  W7:HOU  W8:CIN  W9:KC   |
 
 
 ## Charts
-- `week_04_win_probability.png`
-- `week_04_pick_distribution.png`
-- `week_04_best_picks.png`
-- `week_04_ranked_table.png`
+- `week_05_win_probability.png`
+- `week_05_pick_distribution.png`
+- `week_05_best_picks.png`
+- `week_05_ranked_table.png`

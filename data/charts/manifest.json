@@ -1,33 +1,33 @@
 {
-  "week": 4,
-  "generated_at": "2026-09-30T01:30:33.872080+00:00",
+  "week": 5,
+  "generated_at": "2026-10-07T21:31:45.638956+00:00",
   "shared": [
     {
       "key": "win_probability",
       "label": "Win Probability",
-      "file": "week_04_win_probability.png"
+      "file": "week_05_win_probability.png"
     },
     {
       "key": "pick_distribution",
       "label": "Pick Distribution",
-      "file": "week_04_pick_distribution.png"
+      "file": "week_05_pick_distribution.png"
     },
     {
       "key": "best_picks",
       "label": "Best Picks",
-      "file": "week_04_best_picks.png"
+      "file": "week_05_best_picks.png"
     },
     {
       "key": "ranked_table",
       "label": "Ranked Table",
-      "file": "week_04_ranked_table.png"
+      "file": "week_05_ranked_table.png"
     },
     {
       "key": "teams_remaining",
       "label": "Teams Remaining (whole pool)",
-      "file": "week_04_teams_remaining.png",
+      "file": "week_05_teams_remaining.png",
       "total_entries": 13684,
-      "alive_entries": 3624
+      "alive_entries": 3478
     }
   ],
   "members": {
@@ -35,44 +35,44 @@
       {
         "key": "win_probability",
         "label": "Win Probability",
-        "file": "week_04_win_probability.png"
+        "file": "week_05_win_probability.png"
       },
       {
         "key": "pick_distribution",
         "label": "Pick Distribution",
-        "file": "week_04_pick_distribution.png"
+        "file": "week_05_pick_distribution.png"
       },
       {
         "key": "best_picks",
         "label": "Best Picks",
-        "file": "week_04_best_picks.png"
+        "file": "week_05_best_picks.png"
       },
       {
         "key": "ranked_table",
         "label": "Ranked Table",
-        "file": "week_04_ranked_table.png"
+        "file": "week_05_ranked_table.png"
       }
     ],
     "big-dave": [
       {
         "key": "win_probability",
         "label": "Win Probability",
-        "file": "week_04_win_probability.png"
+        "file": "week_05_win_probability.png"
       },
       {
         "key": "pick_distribution",
         "label": "Pick Distribution",
-        "file": "week_04_pick_distribution.png"
+        "file": "week_05_pick_distribution.png"
       },
       {
         "key": "best_picks",
         "label": "Best Picks",
-        "file": "week_04_best_picks.png"
+        "file": "week_05_best_picks.png"
       },
       {
         "key": "ranked_table",
         "label": "Ranked Table",
-        "file": "week_04_ranked_table.png"
+        "file": "week_05_ranked_table.png"
       }
     ]
   }
