@@ -6,10 +6,13 @@ name: Weekly LMS recommendations
 # state (it doesn't check the clock -- scheduled runs often fire hours late).
 # Whichever cron line
 # doesn't match shows as "skipped" (not "failed") in the Actions UI.
+#
+# Schedule paused 2026-10-21: every tracked member is eliminated for 2026.
+# Uncomment the schedule block to resume weekly runs next season.
 on:
-  schedule:
-    - cron: '0 13 * * 3'   # 09:00 America/New_York while EDT is active (UTC-4)
-    - cron: '0 14 * * 3'   # 09:00 America/New_York while EST is active (UTC-5)
+  # schedule:
+  #   - cron: '0 13 * * 3'   # 09:00 America/New_York while EDT is active (UTC-4)
+  #   - cron: '0 14 * * 3'   # 09:00 America/New_York while EST is active (UTC-5)
   workflow_dispatch:
     inputs:
       week:
